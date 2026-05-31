@@ -704,8 +704,7 @@ async def check_p13_a(message: Message):
         f"Являются ли эти два множества решений эквивалентными (математически одинаковыми)? "
         f"Ответь ТОЛЬКО одним словом: да или нет."
     )
-    from app.deepseek_service import ask_deepseek
-    result = await ask_deepseek(prompt)
+    result = await math_helper.ask_math_question(prompt)
     is_correct = "да" in result.lower()
 
     if is_correct:
