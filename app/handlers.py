@@ -662,14 +662,10 @@ def _progress_bar(accuracy: float, length: int = 8) -> str:
 
 @router.message(text="ОГЭ")
 async def oge_menu(message: Message):
-    # Сначала обновляем постоянную клавиатуру внизу
-    await message.answer("Выбери раздел ОГЭ:", keyboard=kb.exam)
-    # Затем отправляем inline-меню
     await message.answer("👇 Выбери раздел:", keyboard=kb.oge)
 
 @router.message(text="ЕГЭ")
 async def ege_menu(message: Message):
-    await message.answer("Выбери уровень ЕГЭ:", keyboard=kb.exam)
     await message.answer("👇 Выбери уровень:", keyboard=kb.ege)
 
 @router.message(text="/cancel")
@@ -1067,9 +1063,8 @@ async def handle_callback(event: dict):
             TaskStates.p13,
             "📝 ЕГЭ Профиль · Задание 13 — Уравнения\n\n",
             show_photo_hint=True,
+            keyboard=help_kb
         )
-
-
 
 
 
@@ -2229,8 +2224,8 @@ async def check_set_answer(message: Message):
 
 async def send_db_task(peer_id: int, user_id: int,
                        exam_type: str, task_number: int, topic: str | None,
-                       state, intro_text: str = None, show_photo_hint: bool = False):
-    """Универсальная отправка задания из БД."""
+                       state, intro_text: str = None, show_photo_hint: bool = False,
+                       keyboard: str = None):
     set_peeked(user_id, False)
     from app.database import get_random_task as _get
     task = await _get(exam_type, task_number, topic)
@@ -2243,11 +2238,10 @@ async def send_db_task(peer_id: int, user_id: int,
         )
         return
 
-    actual_topic = task.get("topic") or topic or "general"  # ← после проверки
-
+    actual_topic = task.get("topic") or topic or "general"
     set_answer(user_id, task["answer"])
     set_task_id(user_id, task["id"])
-    set_task_meta(user_id, exam_type, task_number, actual_topic)  # ← один раз, правильный топик
+    set_task_meta(user_id, exam_type, task_number, actual_topic)
     set_task_context(user_id, task.get("question") or f"Задание №{task_number}")
     await bot.state_dispenser.set(peer_id, state)
 
@@ -2261,16 +2255,11 @@ async def send_db_task(peer_id: int, user_id: int,
     else:
         text += "\n\n💬 Введи числовой ответ:"
 
-    # Подсказка при первом задании (один раз за сессию)
-    first_task_key = f"first_task_hint_{user_id}"
-    if not ctx.get(first_task_key):
-        ctx.set(first_task_key, True)
-        text += "\n\n💡 Подсказка: если не знаешь ответ — нажми ✅ Верный ответ."
-
     await bot.api.messages.send(peer_id=peer_id, message=text, random_id=0)
     if task.get("image_path"):
         await send_photo(peer_id, task["image_path"])
-
+    if keyboard:
+        await bot.api.messages.send(peer_id=peer_id, message="👇", keyboard=keyboard, random_id=0)
 # -----------------------------------------------------------------------
 # Обработчики проверки ответов — новые задания 1 части
 # -----------------------------------------------------------------------
