@@ -976,9 +976,7 @@ async def handle_callback(event: dict):
 
     elif cmd == "ege_p_part2":
         await send(
-            "ЕГЭ Профиль — Часть 2 (задания 13–19)\n\n"
-            "📸 Пришли фото своего решения — нейросеть проверит его!\n"
-            "💬 Или введи числовой ответ для быстрой проверки.",
+            "ЕГЭ Профиль — Часть 2 (задания 13–19):",
             keyboard=kb.ege_p_part2
         )
 
@@ -1042,13 +1040,33 @@ async def handle_callback(event: dict):
             show_photo_hint=False
         )
 
-    elif cmd in kb.ege_profile_part2_keyboards:
+
+    elif cmd in kb.ege_profile_part2_keyboards and cmd != "p13":
         task_num, topic, label, _ = EGE_PROFILE_TASK_MAP[cmd]
         await send_db_task(
             peer_id, user_id, "ege_profile", task_num, topic,
             getattr(TaskStates, cmd),
             f"📝 ЕГЭ Профиль · {label}\n\n",
             show_photo_hint=True
+        )
+
+    elif cmd == "p13":
+        await send("Выбери тему задания №13 ЕГЭ профиль:", keyboard=kb.ege_p13)
+
+    elif cmd in {"p13_exp", "p13_trig", "p13_mix", "p13_rand"}:
+        topic_map = {
+            "p13_exp": "exponential_equations",
+            "p13_trig": "trigonometric_equations",
+            "p13_mix": "mixed_equations",
+            "p13_rand": None,
+        }
+        topic = topic_map[cmd]
+        retry_kb, help_kb = kb.ege_profile_part2_keyboards["p13"]
+        await send_db_task(
+            peer_id, user_id, "ege_profile", 13, topic,
+            TaskStates.p13,
+            "📝 ЕГЭ Профиль · Задание 13 — Уравнения\n\n",
+            show_photo_hint=True,
         )
 
 

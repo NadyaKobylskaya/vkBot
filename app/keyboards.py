@@ -272,6 +272,23 @@ ege_p_part2 = (
     .get_json()
 )
 
+ege_p13 = (
+    Keyboard(inline=True)
+    .add(Callback("📈 Показательные",       {"cmd": "p13_exp"}),  color=KeyboardButtonColor.PRIMARY)
+    .row()
+    .add(Callback("📐 Тригонометрические",  {"cmd": "p13_trig"}), color=KeyboardButtonColor.PRIMARY)
+    .row()
+    .add(Callback("🔀 Смешанные",           {"cmd": "p13_mix"}),  color=KeyboardButtonColor.PRIMARY)
+    .row()
+    .add(Callback("🎲 Случайное задание",   {"cmd": "p13_rand"}), color=KeyboardButtonColor.POSITIVE)
+    .row()
+    .add(Callback("◀️ Назад",               {"cmd": "ege_p_part2"}))
+    .get_json()
+)
+
+
+
+
 # ═══════════════════════════════════════════════
 # МЕНЮ ЭКСПОРТА ВАРИАНТОВ
 # ═══════════════════════════════════════════════
