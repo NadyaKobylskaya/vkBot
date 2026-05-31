@@ -1959,6 +1959,17 @@ async def handle_callback(event: dict):
         await send_db_task(peer_id, user_id, "oge", 20, topic_20, TaskStates.n20,
                            "✏️ Задание 20 (2-я часть)\n\n", show_photo_hint=True)
 
+
+    elif cmd == "n20_random":
+        set_task_meta(user_id, "oge", 20, "random")
+        await send_db_task(peer_id, user_id, "oge", 20, None, TaskStates.n20,
+                           "✏️ Задание 20 (2-я часть)\n\n")
+
+    elif cmd == "n21_random":
+        set_task_meta(user_id, "oge", 21, "random")
+        await send_db_task(peer_id, user_id, "oge", 21, None, TaskStates.n21,
+                           "✏️ Задание 21 (2-я часть)\n\n")
+
     elif cmd == "show_right_n20":
         await send(f"Правильный ответ: {get_answer(user_id) or 'не найден'}")
 
@@ -1970,11 +1981,9 @@ async def handle_callback(event: dict):
     elif cmd == "n21":
         await send("Выбери тему из задания №21:", keyboard=kb.oge_n21)
 
-    elif cmd in ("n21_motion_line","n21_motion_water","n21_work","n21_percent"):
-        topic_21 = {"n21_motion_line":"motion_line","n21_motion_water":"motion_water",
-                    "n21_work":"work","n21_percent":"percent"}[cmd]
+    elif cmd in ("n21_motion_line", "n21_motion_water", "n21_work", "n21_percent"):
         set_task_meta(user_id, "oge", 21, cmd)
-        await send_db_task(peer_id, user_id, "oge", 21, topic_21, TaskStates.n21,
+        await send_db_task(peer_id, user_id, "oge", 21, cmd, TaskStates.n21,
                            "✏️ Задание 21 (2-я часть)\n\n", show_photo_hint=True)
 
     elif cmd == "show_right_n21":
@@ -2546,7 +2555,7 @@ async def check_part2_answer_result(message: Message, task_number: int) -> dict:
             topic=topic,
         )
 
-    result_text = "✅ Верно!" if is_correct else f"❌ Неверно. Правильный ответ: {correct}"
+    result_text = "✅ Верно!" if is_correct else "❌ Неверно. Попробуй ещё раз или посмотри правильный ответ:"
     return {
         "mode": "text", "is_correct": is_correct, "score": 2 if is_correct else 0,
         "result_text": result_text, "need_retry": False,
