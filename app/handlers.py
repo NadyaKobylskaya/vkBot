@@ -721,12 +721,8 @@ async def check_p13_a(message: Message):
     else:
         await bot.api.messages.send(
             peer_id=peer_id,
-            message=(
-                "❌ Пункт а) — неверно.\n"
-                "Возможно, ты записал ответ в другой форме — проверь запись.\n"
-                "Попробуй ещё раз или посмотри правильный ответ:"
-            ),
-            keyboard=help_kb,
+            message="❌ Пункт а) — неверно. Попробуй ещё раз или посмотри правильный ответ:",
+            keyboard=retry_kb,
             random_id=0
         )
 
