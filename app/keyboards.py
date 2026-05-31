@@ -286,6 +286,12 @@ ege_p13 = (
     .get_json()
 )
 
+ege_p13_success = (
+    Keyboard(inline=True)
+    .add(Callback("🔁 Ещё задание", {"cmd": "p13"}), color=KeyboardButtonColor.POSITIVE)
+    .add(Callback("📋 В меню",      {"cmd": "ege_p_part2"}))
+    .get_json()
+)
 
 
 

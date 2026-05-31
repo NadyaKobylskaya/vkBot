@@ -750,7 +750,7 @@ async def check_p13_b(message: Message):
         await bot.api.messages.send(
             peer_id=peer_id,
             message="✅ Пункт б) — верно! Задание решено полностью 🎉",
-            keyboard=retry_kb,
+            keyboard=kb.ege_p13_success,
             random_id=0
         )
         from app.database import record_attempt
