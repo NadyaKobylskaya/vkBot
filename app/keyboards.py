@@ -740,6 +740,10 @@ help_or_retry_n21_percent      = make_part2_help_kb("show_right_n21", "show_solu
 retry_or_menu_n22 = make_part2_retry_kb("n22")
 help_or_retry_n22 = make_part2_help_kb("show_right_n22", "show_solution_n22")
 
+after_peek_n20 = make_after_peek_kb("n20")
+after_peek_n21 = make_after_peek_kb("n21")
+after_peek_n22 = make_after_peek_kb("n22")
+
 oge_n23 = (
     Keyboard(inline=True)
     .add(Callback("Параллелограмм",  {"cmd": "n23_parallelogram"}))

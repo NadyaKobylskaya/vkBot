@@ -1972,8 +1972,11 @@ async def handle_callback(event: dict):
 
     elif cmd == "show_right_n20":
         set_peeked(user_id, True)
-        await send(f"Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
-                   f"⚠️ Следующая попытка не будет засчитана.")
+        await send(
+            f"Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
+            f"⚠️ Следующая попытка не будет засчитана.",
+            keyboard=kb.after_peek_n20
+        )
 
     elif cmd == "show_solution_n20":
         task_id = get_task_id(user_id)
@@ -1990,8 +1993,11 @@ async def handle_callback(event: dict):
 
     elif cmd == "show_right_n21":
         set_peeked(user_id, True)
-        await send(f"Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
-                   f"⚠️ Следующая попытка не будет засчитана.")
+        await send(
+            f"Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
+            f"⚠️ Следующая попытка не будет засчитана.",
+            keyboard=kb.after_peek_n21
+        )
 
     elif cmd == "show_solution_n21":
         await send("📄 Подробное решение: воспользуйтесь 🧠 AI Help для разбора этой задачи!")
@@ -2000,10 +2006,14 @@ async def handle_callback(event: dict):
     elif cmd == "n22":
         await send_db_task(peer_id, user_id, "oge", 22, "functions", TaskStates.n22,
                            "📈 Задание 22 — Графики функций (2-я часть)\n\n", show_photo_hint=True)
+
     elif cmd == "show_right_n22":
         set_peeked(user_id, True)
-        await send(f"Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
-                   f"⚠️ Следующая попытка не будет засчитана.")
+        await send(
+            f"Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
+            f"⚠️ Следующая попытка не будет засчитана.",
+            keyboard=kb.after_peek_n22
+        )
 
     elif cmd == "show_solution_n22": await send("📄 Воспользуйтесь 🧠 AI Help для разбора!")
 
