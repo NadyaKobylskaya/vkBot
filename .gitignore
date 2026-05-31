@@ -1,0 +1,9 @@
+app/config.py
+bot_database.db
+*.db
+__pycache__/
+.idea/
+.vscode/
+*.pyc
+.venv/
+data/

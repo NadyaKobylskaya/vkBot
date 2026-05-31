@@ -1,0 +1,3754 @@
+{
+  "task6_ordinary_fractions": [
+    {
+      "question": "Найдите значение выражения 1/5 + 53/50.",
+      "answer": "1.26",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/10 + 29/20.",
+      "answer": "1.55",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/2 + 11/10.",
+      "answer": "1.6",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/4 + 37/20.",
+      "answer": "2.1",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/2 + 31/20.",
+      "answer": "2.05",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/2 + 33/50.",
+      "answer": "1.16",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/5 + 17/10.",
+      "answer": "1.9",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/25 + 43/50.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/10 + 21/50.",
+      "answer": "0.52",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/5 + 19/20.",
+      "answer": "1.15",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/5 - 41/50.",
+      "answer": "-0.62",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/4 - 51/20.",
+      "answer": "-2.3",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/2 - 9/10.",
+      "answer": "-0.4",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/2 - 49/20.",
+      "answer": "-1.95",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/10 - 49/50.",
+      "answer": "-0.88",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/10 - 23/20.",
+      "answer": "-1.05",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/25 - 7/50.",
+      "answer": "-0.1",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/2 - 13/50.",
+      "answer": "0.24",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/5 - 47/10.",
+      "answer": "-4.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1/5 - 27/20.",
+      "answer": "-1.15",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 21/5 * 3/7.",
+      "answer": "1.8",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 7/6 * 9/5.",
+      "answer": "2.1",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 5/3 * 9/2.",
+      "answer": "7.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 2/5 * 9/8.",
+      "answer": "0.45",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 3/4 * 6/5.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 15/2 * 7/5.",
+      "answer": "10.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 3/5 * 25/4.",
+      "answer": "3.75",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 9/5 * 2/3.",
+      "answer": "1.2",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 15/4 * 6/5.",
+      "answer": "4.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 7/5 * 12/35.",
+      "answer": "0.48",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 14/5 : 7/2.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 12/5 : 15/2.",
+      "answer": "0.32",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 21/2 : 3/5.",
+      "answer": "17.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 3/5 : 4/35.",
+      "answer": "5.25",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 15/4 : 3/7.",
+      "answer": "8.75",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 3/5 : 2/15.",
+      "answer": "4.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 7/8 : 5/6.",
+      "answer": "1.05",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 4/5 : 2/7.",
+      "answer": "2.8",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 6/5 : 4/11.",
+      "answer": "3.3",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 21/5 : 4/7.",
+      "answer": "7.35",
+      "image": null
+    }
+  ],
+  "task6_decimal_fractions": [
+    {
+      "question": "Найдите значение выражения 6.9 + 7.4",
+      "answer": "14.3",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.4 + 3.7",
+      "answer": "12.1",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.3 + 5.4",
+      "answer": "13.7",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 5.6 + 9.7",
+      "answer": "15.3",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 9.8 + 8.6",
+      "answer": "18.4",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 9.3 + 7.8",
+      "answer": "17.1",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.8 + 5.9",
+      "answer": "14.7",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 7.9 + 2.2",
+      "answer": "10.1",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.7 + 4.6",
+      "answer": "13.3",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 9.2 - 2.4",
+      "answer": "6.8",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 3.3 - 1.9",
+      "answer": "1.4",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 3.9 - 7.3",
+      "answer": "-3.4",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 6.4 - 4.8",
+      "answer": "1.6",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 3.6 - 4.1",
+      "answer": "-0.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 6.1 - 2.5",
+      "answer": "3.6",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 4.7 - 8.2",
+      "answer": "-3.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 5.7 - 7.6",
+      "answer": "-1.9",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 4.9 - 9.4",
+      "answer": "-4.5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.9 * 4.3",
+      "answer": "38.27",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 2.1 * 9.6",
+      "answer": "20.16",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 1.6 * 5.1",
+      "answer": "8.16",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 7.7 * 5.3",
+      "answer": "40.81",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 9.9 * 7.1",
+      "answer": "70.29",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 6.7 * 5.5",
+      "answer": "36.85",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.1 * 7.2",
+      "answer": "58.32",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 2.3 * 7.5",
+      "answer": "17.25",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 5.2 * 3.1",
+      "answer": "16.12",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 9.6 / 1.6",
+      "answer": "6",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 13.2 / 1.2",
+      "answer": "11",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.1 / 0.9",
+      "answer": "9",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 9.6 / 1.2",
+      "answer": "8",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.2 / 4.1",
+      "answer": "2",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.7 / 2.9",
+      "answer": "3",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 6.8 / 1.7",
+      "answer": "4",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 6.5 / 1.3",
+      "answer": "5",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 8.4 / 1.2",
+      "answer": "7",
+      "image": null
+    },
+    {
+      "question": "Найдите значение выражения 4.8 / 0.4",
+      "answer": "12",
+      "image": null
+    }
+  ],
+  "task9_linear_equations": [
+    {
+      "question": "Найдите корень уравнения −4𝑥 − 9 = 6𝑥.",
+      "answer": "−0.9",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −2𝑥 − 4 = 3𝑥.",
+      "answer": "−0.8",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 3𝑥 + 3 = 5𝑥.",
+      "answer": "1.5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −3𝑥 − 9 = 2𝑥.",
+      "answer": "−1.8",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 𝑥 + 3 = −9𝑥.",
+      "answer": "−0.3",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −8𝑥 − 3 = −6𝑥.",
+      "answer": "-1.5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −2𝑥 − 7 = −4𝑥.",
+      "answer": "3.5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 6𝑥 + 1 = −4𝑥.",
+      "answer": "−0.1",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 𝑥 − 2 = −3𝑥.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −𝑥 − 7 = 𝑥.",
+      "answer": "−3.5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 2 + 3𝑥 = −7𝑥 − 5.",
+      "answer": "−0.7",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −1 − 3𝑥 = 2𝑥 + 1.",
+      "answer": "−0.4",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 7 + 8𝑥 = −2𝑥 − 5.",
+      "answer": "−1.2",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −5 + 2𝑥 = −2𝑥 − 3.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 1 − 10𝑥 = 5𝑥 + 10.",
+      "answer": "−0.6",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −4 + 7𝑥 = 8𝑥 + 1.",
+      "answer": "−5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −4 − 6𝑥 = 4𝑥 − 3.",
+      "answer": "−0.1",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 9 + 8𝑥 = 6𝑥 − 2.",
+      "answer": "−5.5",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 8 + 7𝑥 = 9𝑥 + 4.",
+      "answer": "2",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения −5 + 9𝑥 = 10𝑥 + 4.",
+      "answer": "−9",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 10(𝑥 − 9) = 7.",
+      "answer": "9.7",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 4(𝑥 − 6) = 5.",
+      "answer": "7.25",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 5(𝑥 + 4) = −9.",
+      "answer": "−5.8",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 4(𝑥 − 8) = −5.",
+      "answer": "6.75",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 4(𝑥 − 2) = −1.",
+      "answer": "1.75",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 5(𝑥 − 6) = 2.",
+      "answer": "6.4",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 10(𝑥 + 2) = −7.",
+      "answer": "−2.7",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 4(𝑥 + 10) = −1.",
+      "answer": "−10.25",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 4(𝑥 + 1) = 9.",
+      "answer": "1.25",
+      "image": null
+    },
+    {
+      "question": "Найдите корень уравнения 5(𝑥 + 9) = −8.",
+      "answer": "−10.6",
+      "image": null
+    }
+  ],
+  "task9_quadratic_equations": [
+    {
+      "question": "Решите уравнение 𝑥² − 144 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−12",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 9 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−3",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 81 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−9",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 49 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−7",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 36 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−6",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 4 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−2",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 121 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−11",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 64 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−8",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 25 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−5",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 16 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "−4",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 9 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "3",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 16 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "4",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 121 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "11",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 4 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "2",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 49 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "7",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 36 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "6",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 81 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "9",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 144 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "12",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 25 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "5",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 64 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "8",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 10𝑥² = 80𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 9𝑥² = 54𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 4𝑥² = 20𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² = 5𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 7𝑥² = 42𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 3𝑥² = 9𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 8𝑥² = 72𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 6𝑥² = 36𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 2𝑥² = 8𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 5𝑥² = 35𝑥. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 9𝑥 + 18 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "3",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 6𝑥 + 5 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "1",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 11𝑥 + 30 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "5",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 10𝑥 + 24 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "4",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 7𝑥 + 10 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "2",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 2𝑥² − 3𝑥 + 1 = 0. Если уравнение имеет более одного корня, в ответ запишите меньший из корней.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 11𝑥 + 18 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "9",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 12𝑥 + 20 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "10",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 8𝑥 + 12 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "6",
+      "image": null
+    },
+    {
+      "question": "Решите уравнение 𝑥² − 9𝑥 + 8 = 0. Если уравнение имеет более одного корня, в ответ запишите больший из корней.",
+      "answer": "8",
+      "image": null
+    }
+  ],
+  "task13_linear_inequalities": [
+    {
+      "question": "Укажите решение неравенства −9 − 6𝑥 > 9𝑥 + 9.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_1.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства −3 − 𝑥 > 4𝑥 + 7. ",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_2.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства −9 − 6𝑥 < 9𝑥 + 9.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_3.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 3 − 2𝑥 ≥ 8𝑥 − 1.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_4.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства −3 − 3𝑥 > 7𝑥 − 9.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_5.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства 6 − 7𝑥 ≤ 3𝑥 − 7.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_6.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства  −3 − 𝑥 < 4𝑥 + 7.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_7.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства −3 − 5𝑥 ≤ 𝑥 + 3.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_8.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства -3 − 3𝑥 < 7𝑥 − 9.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_9.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства −3 − 𝑥 ≥ 𝑥 − 6.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_linear_inequalities/task13_linear_inequalities_10.png",
+      "answer": "1"
+    }
+  ],
+  "task13_quadratic_inequalities": [
+    {
+      "question": "Укажите решение неравенства 𝑥 - 𝑥² > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_1.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 6𝑥 − 𝑥² > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_2.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 8𝑥 − 𝑥² ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_3.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 6𝑥 − 𝑥²  ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_4.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 5𝑥 − 𝑥² > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_5.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 8𝑥 − 𝑥² > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_6.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 4𝑥 − 𝑥² < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_7.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 8𝑥 − 𝑥² < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_8.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥 - 𝑥² ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_9.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства 6𝑥 − 𝑥² < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_10.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 6𝑥 − 𝑥² ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_11.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства 7𝑥 − 𝑥² < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_12.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 4𝑥 − 𝑥² ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_13.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 5𝑥 − 𝑥² ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_14.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 7𝑥 − 𝑥² > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_15.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 2𝑥 − 𝑥² ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_16.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 3𝑥 - 𝑥² > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_17.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства 7𝑥 − 𝑥² ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_18.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства 8𝑥 − 𝑥² ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_19.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 10𝑥 − 𝑥² ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_20.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 2)(𝑥 − 10) > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_21.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 2)(𝑥 − 8) ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_22.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 3)(𝑥 − 6) > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_23.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 6)(𝑥 − 1) < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_24.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 9)(𝑥 − 4) < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_25.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 5)(𝑥 − 9) > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_26.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 1)(𝑥 − 6) ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_27.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 3)(𝑥 − 7) ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_28.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 3)(𝑥 − 5) ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_29.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 2)(𝑥 − 7) > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_30.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 2)(𝑥 − 7) ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_31.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 2)(𝑥 − 4) ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_32.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 4)(𝑥 − 9) ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_33.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства (𝑥 + 3)(𝑥 − 8) ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_34.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 1)(𝑥 − 7) ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_35.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 4)(𝑥 − 8) > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_36.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 8)(𝑥 − 3) < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_37.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 5)(𝑥 − 2) < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_38.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства  (𝑥 + 1)(𝑥 − 9) > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_39.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 36 < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_40.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 25 < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_41.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 49 > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_42.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 25 > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_43.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 49 < 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_44.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 49 ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_45.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 36 ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_46.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 64 ≥ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_47.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 64 > 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_48.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² - 36 ≤ 0.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_49.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² < 9.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_50.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² ≤ 36.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_51.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 𝑥² > 36.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_52.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите решение неравенства 81𝑥² ≤ 16.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_53.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства  𝑥² ≤ 64.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_54.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства  25𝑥² > 49.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_55.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите решение неравенства 81𝑥² ≥ 16.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_56.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите решение неравенства 25𝑥² ≥ 4.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_57.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите решение неравенства 49𝑥² ≥ 36.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_58.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_59.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_60.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_61.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_62.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_63.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_64.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_65.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_66.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_67.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_68.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_69.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_70.png",
+      "answer": "4"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_71.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_72.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_73.png",
+      "answer": "2"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_74.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_75.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_76.png",
+      "answer": "3"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_77.png",
+      "answer": "1"
+    },
+    {
+      "question": "Укажите неравенство, решение которого изображено на рисунке.",
+      "image": "C:/MY/BOT/image/oge_task13/task13_quadratic_inequalities/task13_quadratic_inequalities_78.png",
+      "answer": "1"
+    }
+  ],
+  "task13_systems_linear_ineq": [
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_1.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_2.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_3.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_4.png",
+      "answer": "3"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_5.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_6.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_7.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_8.png",
+      "answer": "3"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_9.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_10.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_11.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_12.png",
+      "answer": "3"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_13.png",
+      "answer": "3"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_14.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_15.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_16.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_17.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_18.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_20.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_21.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_22.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_23.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_24.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_25.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_26.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_27.png",
+      "answer": "3"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_28.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_29.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_30.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_31.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_32.png",
+      "answer": "3"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_34.png",
+      "answer": "4"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_35.png",
+      "answer": "3"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_36.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_37.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_38.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_39.png",
+      "answer": "1"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_40.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task13/task13_systems_linear_ineq/task13_systems_linear_ineq_41.png",
+      "answer": "3"
+    }
+  ],
+  "task7": [
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_1.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_2.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_3.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_4.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_5.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_6.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_7.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_8.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_9.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_10.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_11.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_12.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_13.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_14.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_15.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_16.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_17.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_18.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_19.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_20.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_21.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_22.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_23.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_24.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_25.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_26.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_27.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_28.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_29.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_30.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_31.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_32.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_33.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_34.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_35.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_36.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_37.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_38.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_39.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_40.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_41.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_42.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_43.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_44.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_45.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_46.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_47.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_48.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_49.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_50.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_51.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_52.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_53.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_54.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_55.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_56.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_57.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_58.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_59.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_60.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_61.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_62.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_63.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_64.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_65.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_66.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_67.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_68.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_69.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_70.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_71.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_72.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_73.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_74.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_75.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_76.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_77.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_78.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_79.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_80.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_81.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_82.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_83.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_84.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_85.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_86.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_87.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_88.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_89.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_90.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_91.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_92.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_93.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_94.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_95.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_96.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_97.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_98.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_99.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_100.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_101.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_102.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_103.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_104.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_105.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_106.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_107.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_108.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_109.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_110.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_111.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_112.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_113.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_114.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_115.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_116.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_117.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_118.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_119.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_120.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_121.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_122.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_123.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_124.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_125.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_126.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_127.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_128.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_129.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_130.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_131.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_132.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_133.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_134.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_135.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_136.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_137.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_138.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_139.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_140.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_141.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_142.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_143.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_144.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_145.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_146.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_147.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_148.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_149.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_150.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_151.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_152.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_153.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_154.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_155.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_156.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_157.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_158.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_159.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_160.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_161.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_162.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_163.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_164.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_165.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_166.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_167.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_168.png",
+      "answer": "2"
+    },
+    {
+      "question": null,
+      "image": "C:/MY/BOT/image/oge_task7/task7_169.png",
+      "answer": "2"
+    }
+  ],
+  "task8_degrees": [
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_1.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_2.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_3.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_4.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_5.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_6.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_7.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_8.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_9.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_10.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_11.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_12.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_13.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_14.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_15.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_16.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_17.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_18.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_19.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_20.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_21.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_22.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_23.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_24.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_25.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_26.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_27.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_28.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_29.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_30.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_31.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_32.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_33.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_34.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_35.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_36.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_37.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_38.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_39.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_40.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_41.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_42.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_43.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_44.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_45.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_46.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_47.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_48.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_49.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_50.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_51.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_52.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_53.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_54.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_55.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_56.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_57.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_58.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_59.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_60.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_61.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_62.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_63.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_64.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_65.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_66.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_67.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_68.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_69.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_70.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_71.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_72.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_73.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_74.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_75.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_76.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_77.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_78.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_79.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_80.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_81.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "task8_degrees_82.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_83.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_84.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_85.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_86.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_87.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_88.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_89.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_90.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_91.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_92.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_93.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_94.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_95.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_96.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_97.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_98.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_99.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_100.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_101.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_102.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_103.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_104.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_105.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_106.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_107.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_108.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_109.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_110.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_111.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_112.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_113.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_114.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_115.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_116.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_117.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_118.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_119.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_120.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_121.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_122.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_123.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_124.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_125.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_126.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_127.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_128.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_129.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_130.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_131.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_132.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_133.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_134.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_135.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_136.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_137.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_138.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_139.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_140.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_141.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_142.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_143.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_144.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_145.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_146.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_147.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_148.png"
+    },
+    {
+      "question": "",
+      "answer": "1",
+      "image": "C:/MY/BOT/image/oge_task8/task8_degrees/task8_degrees_149.png"
+    }
+  ],
+  "task8_arithmetic_square_root": [
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_1.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_2.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_3.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_4.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_5.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_6.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_7.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_8.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_9.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_10.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_11.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_12.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_13.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_14.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_15.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_16.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_17.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_18.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_19.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_20.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_21.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_22.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_23.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_24.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_25.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_26.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_27.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_28.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_29.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_30.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_31.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_32.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_33.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_34.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_35.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_36.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_37.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_38.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_39.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_40.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_41.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_42.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_43.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_44.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_45.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_46.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_47.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_48.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_49.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_50.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_51.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_52.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_53.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_54.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_55.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_56.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_57.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_58.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_59.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_60.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_61.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_62.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_63.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_64.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_65.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_66.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_67.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_68.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_69.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_70.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_71.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_72.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_73.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_74.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_75.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_76.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_77.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_78.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_79.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_80.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_81.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_82.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_83.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_84.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_85.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_86.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_87.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_88.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_89.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_90.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_91.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_92.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_93.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_94.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_95.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_96.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_97.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_98.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_99.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_100.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_101.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_102.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_103.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_104.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_105.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_106.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_107.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_108.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_109.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_110.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_111.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_112.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_113.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_114.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_115.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_116.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_117.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_118.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_119.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_120.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_121.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_122.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_123.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_124.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_126.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_127.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_128.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_129.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_130.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_131.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_132.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_133.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_134.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_135.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_136.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_137.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_138.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_139.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_140.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_141.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_142.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_143.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_144.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_145.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_146.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_147.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_148.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_149.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_150.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_151.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_152.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_153.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_154.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_155.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_156.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_157.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_158.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_159.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_160.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_161.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_162.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_163.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_164.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_165.png" },
+  { "question": null, "answer": "1", "image": "C:/MY/BOT/image/oge_task8/task8_arithmetic_square_root/task8_arithmetic_square_root_166.png" }
+],
+  "task10_probability_problems": [
+    {
+      "question": "У бабушки 20 чашек: 10 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "У бабушки 15 чашек: 9 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.4",
+      "image": null
+    },
+    {
+      "question": "У бабушки 20 чашек: 15 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.25",
+      "image": null
+    },
+    {
+      "question": "У бабушки 25 чашек: 5 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "У бабушки 10 чашек: 7 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.3",
+      "image": null
+    },
+    {
+      "question": "У бабушки 20 чашек: 14 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.3",
+      "image": null
+    },
+    {
+      "question": "У бабушки 10 чашек: 1 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "У бабушки 25 чашек: 7 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.72",
+      "image": null
+    },
+    {
+      "question": "У бабушки 25 чашек: 2 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.92",
+      "image": null
+    },
+    {
+      "question": "У бабушки 20 чашек: 9 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.55",
+      "image": null
+    },
+    {
+      "question": "У бабушки 10 чашек: 3 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.7",
+      "image": null
+    },
+    {
+      "question": "У бабушки 20 чашек: 12 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.4",
+      "image": null
+    },
+    {
+      "question": "У бабушки 20 чашек: 6 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.7",
+      "image": null
+    },
+    {
+      "question": "У бабушки 25 чашек: 3 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.88",
+      "image": null
+    },
+    {
+      "question": "У бабушки 15 чашек: 6 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.6",
+      "image": null
+    },
+    {
+      "question": "У бабушки 10 чашек: 4 с красными цветами, остальные с синими. Бабушка наливает чай в случайно выбранную чашку. Найдите вероятность того, что это будет чашка с синими цветами.",
+      "answer": "0.6",
+      "image": null
+    },
+    {
+      "question": "В среднем из 80 карманных фонариков, поступивших в продажу, двенадцать неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.85",
+      "image": null
+    },
+    {
+      "question": "В среднем из 150 карманных фонариков, поступивших в продажу, восемнадцать неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.88",
+      "image": null
+    },
+    {
+      "question": "В среднем из 150 карманных фонариков, поступивших в продажу, шесть неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.96",
+      "image": null
+    },
+    {
+      "question": "В среднем из 50 карманных фонариков, поступивших в продажу, шесть неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.88",
+      "image": null
+    },
+    {
+      "question": "В среднем из 50 карманных фонариков, поступивших в продажу, семь неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.86",
+      "image": null
+    },
+    {
+      "question": "В среднем из 100 карманных фонариков, поступивших в продажу, четыре неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.96",
+      "image": null
+    },
+    {
+      "question": "В среднем из 100 карманных фонариков, поступивших в продажу, восемь неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.92",
+      "image": null
+    },
+    {
+      "question": "В среднем из 50 карманных фонариков, поступивших в продажу, пять неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "В среднем из 80 карманных фонариков, поступивших в продажу, четыре неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.95",
+      "image": null
+    },
+    {
+      "question": "В среднем из 75 карманных фонариков, поступивших в продажу, пятнадцать неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "В среднем из 200 карманных фонариков, поступивших в продажу, четыре неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.98",
+      "image": null
+    },
+    {
+      "question": "В среднем из 100 карманных фонариков, поступивших в продажу, девять неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.91",
+      "image": null
+    },
+    {
+      "question": "В среднем из 150 карманных фонариков, поступивших в продажу, три неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.98",
+      "image": null
+    },
+    {
+      "question": "В среднем из 100 карманных фонариков, поступивших в продажу, пять неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.95",
+      "image": null
+    },
+    {
+      "question": "В среднем из 75 карманных фонариков, поступивших в продажу, девять неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.88",
+      "image": null
+    },
+    {
+      "question": "В среднем из 150 карманных фонариков, поступивших в продажу, пятнадцать неисправных. Найдите вероятность того, что выбранный наудачу в магазине фонарик окажется исправен.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 10 машин: 5 чёрных, 1 жёлтая и 4 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.1",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 30 машин: 6 чёрных, 3 жёлтых и 21 зелёная. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.1",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 20 машин: 2 чёрных, 2 жёлтых и 16 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.1",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 15 машин: 3 чёрных, 6 жёлтых и 6 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.4",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 30 машин: 3 чёрных, 9 жёлтых и 18 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.3",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 20 машин: 2 чёрных, 5 жёлтых и 13 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.25",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 10 машин: 5 чёрных, 3 жёлтых и 2 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.3",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 10 машин: 1 чёрная, 1 жёлтая и 8 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.1",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 12 машин: 3 чёрных, 3 жёлтых и 6 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.25",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 15 машин: 4 чёрных, 3 жёлтых и 8 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.2",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 12 машин: 1 чёрная, 3 жёлтых и 8 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.25",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 30 машин: 1 чёрная, 9 жёлтых и 20 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.3",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 10 машин: 2 чёрных, 2 жёлтых и 6 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.2",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 12 машин: 3 чёрных, 6 жёлтых и 3 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 20 машин: 3 чёрных, 3 жёлтых и 14 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.15",
+      "image": null
+    },
+    {
+      "question": "В фирме такси в данный момент свободно 12 машин: 2 чёрных, 6 жёлтых и 4 зелёных. По вызову выехала одна из машин, случайно оказавшаяся ближе всего к заказчику. Найдите вероятность того, что к нему приедет жёлтое такси.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 7 спортсменов из России, 1 спортсмен из Швеции и 2 спортсмена из Норвегии. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен из Швеции.",
+      "answer": "0.1",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 7 спортсменов из России, 1 спортсмен из Норвегии и 2 спортсмена из Швеции. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен из Норвегии.",
+      "answer": "0.1",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 13 спортсменов из России, 2 спортсмена из Норвегии и 5 спортсменов из Швеции. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен из Норвегии или Швеции.",
+      "answer": "0.35",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 13 спортсменов из России, 2 спортсмена из Норвегии и 5 спортсменов из Швеции. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен не из России.",
+      "answer": "0.35",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 11 спортсменов из России, 6 спортсменов из Норвегии и 3 спортсмена из Швеции. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен из Норвегии или Швеции.",
+      "answer": "0.45",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 11 спортсменов из России, 6 спортсменов из Норвегии и 3 спортсмена из Швеции. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен из России.",
+      "answer": "0.55",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 13 спортсменов из России, 2 спортсмена из Норвегии и 5 спортсменов из Швеции. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен из России.",
+      "answer": "0.65",
+      "image": null
+    },
+    {
+      "question": "В лыжных гонках участвуют 11 спортсменов из России, 6 спортсменов из Норвегии и 3 спортсмена из Швеции. Порядок, в котором спортсмены стартуют, определяется жребием. Найдите вероятность того, что первым будет стартовать спортсмен не из России.",
+      "answer": "0.45",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,02. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.98",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,2. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,21. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.79",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,13. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.87",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,12. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.88",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,07. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.93",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,08. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.92",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,26. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.74",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,28. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.72",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,14. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.86",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,09. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.91",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,29. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.71",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,11. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.89",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,06. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.94",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,22. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.78",
+      "image": null
+    },
+    {
+      "question": "Вероятность того, что новая шариковая ручка пишет плохо (или не пишет), равна 0,19. Покупатель в магазине выбирает одну шариковую ручку. Найдите вероятность того, что эта ручка пишет хорошо.",
+      "answer": "0.81",
+      "image": null
+    },
+    {
+      "question": "На экзамене 20 билетов, Оскар не выучил 7 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.65",
+      "image": null
+    },
+    {
+      "question": "На экзамене 40 билетов, Яша не выучил 4 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "На экзамене 20 билетов, Андрей не выучил 1 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.95",
+      "image": null
+    },
+    {
+      "question": "На экзамене 50 билетов, Оскар не выучил 7 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.86",
+      "image": null
+    },
+    {
+      "question": "На экзамене 50 билетов, Яша не выучил 3 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.94",
+      "image": null
+    },
+    {
+      "question": "На экзамене 25 билетов, Стас не выучил 5 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "На экзамене 50 билетов, Сеня не выучил 5 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "На экзамене 50 билетов, Серёжа не выучил 11 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.78",
+      "image": null
+    },
+    {
+      "question": "На экзамене 35 билетов, Стас не выучил 7 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "На экзамене 40 билетов, Саша не выучил 2 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.95",
+      "image": null
+    },
+    {
+      "question": "На экзамене 40 билетов, Оскар не выучил 12 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.7",
+      "image": null
+    },
+    {
+      "question": "На экзамене 25 билетов, Костя не выучил 4 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.84",
+      "image": null
+    },
+    {
+      "question": "На экзамене 40 билетов, Сеня не выучил 8 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "На экзамене 60 билетов, Олег не выучил 12 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "На экзамене 20 билетов, Саша не выучил 2 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.9",
+      "image": null
+    },
+    {
+      "question": "На экзамене 30 билетов, Серёжа не выучил 9 из них. Найдите вероятность того, что ему попадётся выученный билет.",
+      "answer": "0.7",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 206 ручек: 20 красных, 8 зелёных, 12 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или синей.",
+      "answer": "0.61",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 100 ручек: 37 красных, 8 зелёных, 17 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка окажется красной или чёрной.",
+      "answer": "0.66",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 170 ручек: 47 красных, 33 зелёных, 14 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или чёрной.",
+      "answer": "0.65",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 144 ручки: 30 красных, 24 зелёных, 18 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет синей или чёрной.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 132 ручки: 34 красных, 39 зелёных, 5 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет зелёной или чёрной.",
+      "answer": "0.64",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 264 ручки: 38 красных, 30 зелёных, 8 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или чёрной.",
+      "answer": "0.71",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 84 ручки, из них 22 красных, 9 зелёных, 41 фиолетовая, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или фиолетовой.",
+      "answer": "0.75",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 165 ручек: 37 красных, 16 зелёных, 46 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет синей или чёрной.",
+      "answer": "0.4",
+      "image": null
+    },
+        {
+      "question": "В магазине канцтоваров продаётся 200 ручек: 23 красных, 9 зелёных, 8 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет синей или чёрной.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 272 ручки: 11 красных, 37 зелёных, 26 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет зелёной или синей.",
+      "answer": "0.69",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 138 ручек: 34 красных, 23 зелёных, 11 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или чёрной.",
+      "answer": "0.67",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 255 ручек: 46 красных, 31 зелёная, 36 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет зелёной или синей.",
+      "answer": "0.62",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 112 ручек: 17 красных, 44 зелёных, 29 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или чёрной.",
+      "answer": "0.49",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 200 ручек: 31 красная, 25 зелёных, 38 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или чёрной.",
+      "answer": "0.63",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 145 ручек: 15 красных, 27 зелёных, 13 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет фиолетовой или синей.",
+      "answer": "0.59",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров продаётся 120 ручек: 32 красных, 32 зелёных, 46 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка будет красной или фиолетовой.",
+      "answer": "0.65",
+      "image": null
+    },
+    {
+      "question": "В магазине канцтоваров в продаже 100 ручек: 37 красных, 8 зелёных, 17 фиолетовых, остальные синие и чёрные, их поровну. Найдите вероятность того, что случайно выбранная в этом магазине ручка окажется красной или чёрной.",
+      "answer": "0.66",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 10 пазлов для подарков детям в связи с окончанием учебного года, из них 5 с машинами и 5 с видами городов. Подарки распределяются случайным образом между 10 детьми, среди которых есть Витя. Найдите вероятность того, что Вите достанется пазл с машиной.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 20 пазлов для подарков детям в связи с окончанием учебного года, из них 10 с машинами и 10 с видами городов. Подарки распределяются случайным образом между 20 детьми, среди которых есть Коля. Найдите вероятность того, что Коле достанется пазл с машиной.",
+      "answer": "0.5",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 10 пазлов для подарков детям в связи с окончанием учебного года, из них 3 с машинами и 7 с видами городов. Подарки распределяются случайным образом между 10 детьми, среди которых есть Миша. Найдите вероятность того, что Мише достанется пазл с машиной.",
+      "answer": "0.3",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 25 пазлов для подарков детям в связи с окончанием учебного года, из них 18 с машинами и 7 с видами городов. Подарки распределяются случайным образом между 25 детьми, среди которых есть Володя. Найдите вероятность того, что Володе достанется пазл с машиной.",
+      "answer": "0.72",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 20 пазлов для подарков детям в связи с окончанием учебного года, из них 9 с машинами и 11 с видами городов. Подарки распределяются случайным образом между 20 детьми, среди которых есть Саша. Найдите вероятность того, что Саше достанется пазл с машиной.",
+      "answer": "0.45",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 20 пазлов для подарков детям в связи с окончанием учебного года, из них 15 с машинами и 5 с видами городов. Подарки распределяются случайным образом между 20 детьми, среди которых есть Витя. Найдите вероятность того, что Вите достанется пазл с машиной.",
+      "answer": "0.75",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 10 пазлов для подарков детям в связи с окончанием учебного года, из них 4 с машинами и 6 с видами городов. Подарки распределяются случайным образом между 10 детьми, среди которых есть Володя. Найдите вероятность того, что Володе достанется пазл с машиной.",
+      "answer": "0.4",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 15 пазлов для подарков детям в связи с окончанием учебного года, из них 12 с машинами и 3 с видами городов. Подарки распределяются случайным образом между 15 детьми, среди которых есть Миша. Найдите вероятность того, что Мише достанется пазл с машиной.",
+      "answer": "0.8",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 25 пазлов для подарков детям в связи с окончанием учебного года, из них 21 с машинами и 4 с видами городов. Подарки распределяются случайным образом между 25 детьми, среди которых есть Саша. Найдите вероятность того, что Саше достанется пазл с машиной.",
+      "answer": "0.84",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 20 пазлов для подарков детям в связи с окончанием учебного года, из них 14 с машинами и 6 с видами городов. Подарки распределяются случайным образом между 20 детьми, среди которых есть Володя. Найдите вероятность того, что Володе достанется пазл с машиной.",
+      "answer": "0.7",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 10 пазлов для подарков детям в связи с окончанием учебного года, из них 2 с машинами и 8 с видами городов. Подарки распределяются случайным образом между 10 детьми, среди которых есть Андрюша. Найдите вероятность того, что Андрюше достанется пазл с машиной.",
+      "answer": "0.2",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 25 пазлов для подарков детям в связи с окончанием учебного года, из них 22 с машинами и 3 с видами городов. Подарки распределяются случайным образом между 25 детьми, среди которых есть Коля. Найдите вероятность того, что Коле достанется пазл с машиной.",
+      "answer": "0.88",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 25 пазлов для подарков детям в связи с окончанием учебного года, из них 24 с машинами и 1 с видом города. Подарки распределяются случайным образом между 25 детьми, среди которых есть Андрюша. Найдите вероятность того, что Андрюше достанется пазл с машиной.",
+      "answer": "0.96",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 20 пазлов для подарков детям в связи с окончанием учебного года, из них 6 с машинами и 14 с видами городов. Подарки распределяются случайным образом между 20 детьми, среди которых есть Володя. Найдите вероятность того, что Володе достанется пазл с машиной.",
+      "answer": "0.3",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 20 пазлов для подарков детям в связи с окончанием учебного года, из них 11 с машинами и 9 с видами городов. Подарки распределяются случайным образом между 20 детьми, среди которых есть Илюша. Найдите вероятность того, что Илюше достанется пазл с машиной.",
+      "answer": "0.55",
+      "image": null
+    },
+    {
+      "question": "Родительский комитет закупил 20 пазлов для подарков детям в связи с окончанием учебного года, из них 8 с машинами и 12 с видами городов. Подарки распределяются случайным образом между 20 детьми, среди которых есть Вася. Найдите вероятность того, что Васе достанется пазл с машиной.",
+      "answer": "0.4",
+      "image": null
+    }
+  ]
+}

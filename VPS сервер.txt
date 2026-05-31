@@ -1,0 +1,5 @@
+
+Доступ к серверу Charismatic Cassian по SSH:
+IP:	155.212.211.145
+Логин:	root
+Пароль:	Y7m4U9%aHIW5

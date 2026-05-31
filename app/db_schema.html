@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Схема БД</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Unbounded:wght@700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #0d0f14;
+    font-family: 'JetBrains Mono', monospace;
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-image:
+      radial-gradient(ellipse at 20% 20%, rgba(99,102,241,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(16,185,129,0.06) 0%, transparent 60%);
+  }
+
+  h1 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #a5b4fc;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #475569;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .schema {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* SVG линии связей */
+  .relations {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    overflow: visible;
+  }
+
+  .table {
+    background: #141720;
+    border: 1px solid #1e2535;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 240px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 1;
+  }
+
+  .table:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.6), 0 0 0 1px rgba(165,180,252,0.15);
+  }
+
+  .table-header {
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #1e2535;
+  }
+
+  .table-icon {
+    width: 28px; height: 28px;
+    border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .table-name {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .table-desc {
+    font-size: 9px;
+    color: #475569;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .field {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #0d0f14;
+    font-size: 11px;
+    transition: background 0.15s;
+  }
+
+  .field:hover { background: rgba(255,255,255,0.02); }
+  .field:last-child { border-bottom: none; }
+
+  .field-badge {
+    font-size: 9px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    width: 30px;
+    text-align: center;
+  }
+
+  .pk  { background: rgba(234,179,8,0.15);  color: #eab308; }
+  .fk  { background: rgba(99,102,241,0.15); color: #818cf8; }
+  .idx { background: rgba(16,185,129,0.12); color: #34d399; }
+  .col { background: rgba(100,116,139,0.15);color: #64748b; }
+
+  .field-name { color: #e2e8f0; flex: 1; }
+  .field-name.key { color: #fde68a; }
+  .field-name.ref { color: #a5b4fc; }
+
+  .field-type { color: #334155; font-size: 10px; margin-left: auto; }
+
+  /* Цвета таблиц */
+  .t-tasks    .table-header { background: linear-gradient(135deg, rgba(16,185,129,0.12), rgba(16,185,129,0.04)); }
+  .t-tasks    .table-icon   { background: rgba(16,185,129,0.15); }
+  .t-tasks    .table-name   { color: #34d399; }
+
+  .t-users    .table-header { background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(99,102,241,0.04)); }
+  .t-users    .table-icon   { background: rgba(99,102,241,0.15); }
+  .t-users    .table-name   { color: #a5b4fc; }
+
+  .t-attempts .table-header { background: linear-gradient(135deg, rgba(244,63,94,0.12), rgba(244,63,94,0.04)); }
+  .t-attempts .table-icon   { background: rgba(244,63,94,0.15); }
+  .t-attempts .table-name   { color: #fb7185; }
+
+  .t-progress .table-header { background: linear-gradient(135deg, rgba(234,179,8,0.12), rgba(234,179,8,0.04)); }
+  .t-progress .table-icon   { background: rgba(234,179,8,0.15); }
+  .t-progress .table-name   { color: #fbbf24; }
+
+  /* Легенда */
+  .legend {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 10px; color: #475569;
+    letter-spacing: 1px;
+  }
+
+  .legend-badge {
+    font-size: 9px; padding: 2px 6px;
+    border-radius: 4px; font-weight: 700;
+  }
+
+  /* Связи */
+  .rel-line {
+    stroke-dasharray: 4 3;
+    stroke-width: 1.5;
+    fill: none;
+    opacity: 0.4;
+  }
+  .rel-dot { opacity: 0.5; }
+</style>
+</head>
+<body>
+
+<h1>СХЕМА БАЗЫ ДАННЫХ</h1>
+<p class="subtitle">VK Бот · Подготовка к ОГЭ / ЕГЭ</p>
+
+<div class="schema" id="schema">
+
+  <!-- TASKS -->
+  <div class="table t-tasks" id="tbl-tasks">
+    <div class="table-header">
+      <div class="table-icon">📚</div>
+      <div>
+        <div class="table-name">tasks</div>
+        <div class="table-desc">Задания</div>
+      </div>
+    </div>
+    <div class="field"><span class="field-badge pk">PK</span><span class="field-name key">id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">exam_type</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">task_number</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">topic</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">question</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">image_path</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">answer</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">question_type</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">answer_type</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">difficulty</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">created_at</span><span class="field-type">TEXT</span></div>
+  </div>
+
+  <!-- USERS -->
+  <div class="table t-users" id="tbl-users">
+    <div class="table-header">
+      <div class="table-icon">👤</div>
+      <div>
+        <div class="table-name">users</div>
+        <div class="table-desc">Пользователи</div>
+      </div>
+    </div>
+    <div class="field"><span class="field-badge pk">PK</span><span class="field-name key">id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge idx">UQ</span><span class="field-name">vk_id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">username</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">exam_target</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">registered_at</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">last_active</span><span class="field-type">TEXT</span></div>
+  </div>
+
+  <!-- ATTEMPTS -->
+  <div class="table t-attempts" id="tbl-attempts">
+    <div class="table-header">
+      <div class="table-icon">✏️</div>
+      <div>
+        <div class="table-name">attempts</div>
+        <div class="table-desc">Попытки решения</div>
+      </div>
+    </div>
+    <div class="field"><span class="field-badge pk">PK</span><span class="field-name key">id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge fk">FK</span><span class="field-name ref">user_id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge fk">FK</span><span class="field-name ref">task_id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">user_answer</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">is_correct</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">attempted_at</span><span class="field-type">TEXT</span></div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="table t-progress" id="tbl-progress">
+    <div class="table-header">
+      <div class="table-icon">📊</div>
+      <div>
+        <div class="table-name">progress</div>
+        <div class="table-desc">Прогресс по темам</div>
+      </div>
+    </div>
+    <div class="field"><span class="field-badge pk">PK</span><span class="field-name key">id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge fk">FK</span><span class="field-name ref">user_id</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">exam_type</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">task_number</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">topic</span><span class="field-type">TEXT</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">total</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge col">—</span><span class="field-name">correct</span><span class="field-type">INTEGER</span></div>
+    <div class="field"><span class="field-badge idx">UQ</span><span class="field-name">last_attempt</span><span class="field-type">TEXT</span></div>
+  </div>
+
+</div>
+
+<!-- Легенда -->
+<div class="legend">
+  <div class="legend-item"><span class="legend-badge pk" style="background:rgba(234,179,8,0.15);color:#eab308">PK</span> Первичный ключ</div>
+  <div class="legend-item"><span class="legend-badge fk" style="background:rgba(99,102,241,0.15);color:#818cf8">FK</span> Внешний ключ</div>
+  <div class="legend-item"><span class="legend-badge idx" style="background:rgba(16,185,129,0.12);color:#34d399">UQ</span> Уникальное поле</div>
+  <div class="legend-item"><span class="legend-badge col" style="background:rgba(100,116,139,0.15);color:#64748b">—</span> Обычное поле</div>
+</div>
+
+<script>
+// Рисуем связи между таблицами
+window.addEventListener('load', () => {
+  const schema = document.getElementById('schema');
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.classList.add('relations');
+  schema.prepend(svg);
+
+  function getCenter(el) {
+    const sr = schema.getBoundingClientRect();
+    const er = el.getBoundingClientRect();
+    return {
+      x: er.left - sr.left + er.width / 2,
+      y: er.top  - sr.top  + er.height / 2,
+      right:  er.right  - sr.left,
+      left:   er.left   - sr.left,
+      top:    er.top    - sr.top,
+      bottom: er.bottom - sr.top,
+    };
+  }
+
+  function drawCurve(x1, y1, x2, y2, color) {
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const mx = (x1 + x2) / 2;
+    path.setAttribute('d', `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`);
+    path.setAttribute('stroke', color);
+    path.classList.add('rel-line');
+    svg.appendChild(path);
+
+    // точки на концах
+    [x1,y1,x2,y2].forEach((_, i) => {
+      if (i % 2 === 0) {
+        const cx = i === 0 ? x1 : x2;
+        const cy = i === 0 ? y1 : y2;
+        const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        dot.setAttribute('cx', cx); dot.setAttribute('cy', cy); dot.setAttribute('r', 3);
+        dot.setAttribute('fill', color); dot.classList.add('rel-dot');
+        svg.appendChild(dot);
+      }
+    });
+  }
+
+  const users    = document.getElementById('tbl-users');
+  const attempts = document.getElementById('tbl-attempts');
+  const progress = document.getElementById('tbl-progress');
+  const tasks    = document.getElementById('tbl-tasks');
+
+  const u = getCenter(users);
+  const a = getCenter(attempts);
+  const p = getCenter(progress);
+  const t = getCenter(tasks);
+
+  // users → attempts
+  drawCurve(u.right, u.y, a.left, a.y - 20, '#818cf8');
+  // users → progress
+  drawCurve(u.right, u.y + 20, p.left, p.y - 20, '#fbbf24');
+  // tasks → attempts
+  drawCurve(t.right, t.y, a.left, a.y + 20, '#fb7185');
+});
+</script>
+</body>
+</html>
