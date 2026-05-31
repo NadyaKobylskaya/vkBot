@@ -1057,13 +1057,11 @@ async def handle_callback(event: dict):
             "p13_rand": None,
         }
         topic = topic_map[cmd]
-        retry_kb, help_kb = kb.ege_profile_part2_keyboards["p13"]
         await send_db_task(
             peer_id, user_id, "ege_profile", 13, topic,
             TaskStates.p13,
             "📝 ЕГЭ Профиль · Задание 13 — Уравнения\n\n",
-            show_photo_hint=True,
-            keyboard=help_kb
+            show_photo_hint=True
         )
 
 
