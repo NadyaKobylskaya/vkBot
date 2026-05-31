@@ -155,6 +155,8 @@ class TaskStates(BaseStateGroup):
     p18 = "p18"
     p19 = "p19"
     AI_HELP_MODE                 = "ai_help_mode"
+    p13_a = "p13_a"  # ждём ответ на пункт а
+    p13_b = "p13_b"  # ждём ответ на пункт б
 
 # -----------------------------------------------------------------------
 # Хелперы
@@ -191,6 +193,16 @@ def get_task_meta(user_id: int):
 
 def set_task_meta(user_id: int, exam_type: str, task_number: int, topic: str):
     ctx.set(f"task_meta_{user_id}", (exam_type, task_number, topic))
+
+def set_p13_answers(user_id: int, answer_a: str, answer_b: str):
+    ctx.set(f"p13_a_{user_id}", answer_a)
+    ctx.set(f"p13_b_{user_id}", answer_b)
+
+def get_p13_answer_a(user_id: int) -> str:
+    return ctx.get(f"p13_a_{user_id}") or ""
+
+def get_p13_answer_b(user_id: int) -> str:
+    return ctx.get(f"p13_b_{user_id}") or ""
 
 async def send_photo(peer_id: int, image_path: str):
     import os
@@ -673,6 +685,88 @@ async def cancel_handler(message: Message):
     bot.state_dispenser.dictionary.pop(message.from_id, None)
     await message.answer("Режим AI Help деактивирован.", keyboard=kb.oge)
 
+
+
+@router.message(state=TaskStates.p13_a)
+async def check_p13_a(message: Message):
+    user_id = message.from_id
+    peer_id = message.peer_id
+    user_answer = message.text.strip()
+    correct_a = get_p13_answer_a(user_id)
+    correct_b = get_p13_answer_b(user_id)
+
+    retry_kb, help_kb = kb.ege_profile_part2_keyboards["p13"]
+
+    # Проверка через DeepSeek
+    prompt = (
+        f"Правильный ответ на уравнение: {correct_a}\n"
+        f"Ответ ученика: {user_answer}\n"
+        f"Являются ли эти два множества решений эквивалентными (математически одинаковыми)? "
+        f"Ответь ТОЛЬКО одним словом: да или нет."
+    )
+    from app.deepseek_service import ask_deepseek
+    result = await ask_deepseek(prompt)
+    is_correct = "да" in result.lower()
+
+    if is_correct:
+        await bot.state_dispenser.set(peer_id, TaskStates.p13_b)
+        await bot.api.messages.send(
+            peer_id=peer_id,
+            message=(
+                "✅ Пункт а) — верно!\n\n"
+                "Теперь введи ответ на пункт б) — корни в порядке возрастания через точку с запятой:\n"
+                f"Например: π/2; π; 3π/2"
+            ),
+            random_id=0
+        )
+    else:
+        await bot.api.messages.send(
+            peer_id=peer_id,
+            message=(
+                "❌ Пункт а) — неверно.\n"
+                "Возможно, ты записал ответ в другой форме — проверь запись.\n"
+                "Попробуй ещё раз или посмотри правильный ответ:"
+            ),
+            keyboard=help_kb,
+            random_id=0
+        )
+
+
+
+@router.message(state=TaskStates.p13_b)
+async def check_p13_b(message: Message):
+    user_id = message.from_id
+    peer_id = message.peer_id
+    user_answer = message.text.strip()
+    correct_b = get_p13_answer_b(user_id)
+
+    retry_kb, help_kb = kb.ege_profile_part2_keyboards["p13"]
+
+    # Нормализация: убираем пробелы вокруг ; и приводим к нижнему регистру
+    def normalize(s):
+        return ";".join(p.strip() for p in s.replace(",", ";").split(";")).lower()
+
+    if normalize(user_answer) == normalize(correct_b):
+        bot.state_dispenser.dictionary.pop(user_id, None)
+        await bot.api.messages.send(
+            peer_id=peer_id,
+            message="✅ Пункт б) — верно! Задание решено полностью 🎉",
+            keyboard=retry_kb,
+            random_id=0
+        )
+        from app.database import record_attempt
+        await record_attempt(user_id, get_task_id(user_id), True)
+    else:
+        await bot.api.messages.send(
+            peer_id=peer_id,
+            message=(
+                "❌ Пункт б) — неверно.\n"
+                "Проверь порядок корней (по возрастанию) и формат записи.\n"
+                "Попробуй ещё раз или посмотри правильный ответ:"
+            ),
+            keyboard=help_kb,
+            random_id=0
+        )
 # -----------------------------------------------------------------------
 # Callback-обработчик — единая точка входа для message_event
 # -----------------------------------------------------------------------
@@ -1017,12 +1111,17 @@ async def handle_callback(event: dict):
             _, after_kb = kb.ege_base_keyboards[task_cmd]
         elif task_cmd in kb.ege_profile_part1_keyboards:
             _, after_kb = kb.ege_profile_part1_keyboards[task_cmd]
+        elif task_cmd in kb.ege_profile_part2_keyboards:
+            _, after_kb = kb.ege_profile_part2_keyboards[task_cmd]
         else:
             after_kb = kb.ege_base
         set_peeked(user_id, True)
+        # Для p13 — сбрасываем состояние, так как пользователь посмотрел ответ
+        if task_cmd == "p13":
+            bot.state_dispenser.dictionary.pop(user_id, None)
         await send(
-            f"✅ Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
-            f"⚠️ Следующий введённый ответ не будет засчитан.",
+            f"✅ Правильный ответ:\n{get_answer(user_id) or 'не найден'}\n\n"
+            f"⚠️ Задание не засчитано.",
             keyboard=after_kb
         )
 
@@ -1057,12 +1156,32 @@ async def handle_callback(event: dict):
             "p13_rand": None,
         }
         topic = topic_map[cmd]
-        await send_db_task(
-            peer_id, user_id, "ege_profile", 13, topic,
-            TaskStates.p13,
-            "📝 ЕГЭ Профиль · Задание 13 — Уравнения\n\n",
-            show_photo_hint=True
+        from app.database import get_random_task as _get
+        task = await _get("ege_profile", 13, topic)
+        if not task:
+            await send("⚠️ Заданий по этой теме пока нет. Скоро добавим!", keyboard=kb.ege_p_part2)
+            return
+        # Разбиваем ответ на а) и б)
+        answer_full = task["answer"]
+        parts = answer_full.split("\n")
+        answer_a = parts[0].replace("а) ", "").strip() if len(parts) > 0 else ""
+        answer_b = parts[1].replace("б) ", "").strip() if len(parts) > 1 else ""
+        set_p13_answers(user_id, answer_a, answer_b)
+        set_task_context(user_id, task.get("question") or "Задание №13")
+        set_task_id(user_id, task["id"])
+        set_task_meta(user_id, "ege_profile", 13, topic or "mixed")
+        await bot.state_dispenser.set(peer_id, TaskStates.p13_a)
+        text = (
+                "📝 ЕГЭ Профиль · Задание 13 — Уравнения\n\n"
+                + (task.get("question") or "Реши задание на картинке.")
+                + "\n\n📸 Пришли фото своего решения — нейросеть проверит его!\n"
+                  "💬 Или введи ответ текстом.\n\n"
+                  "Сначала введи ответ на пункт а) в формате:\n"
+                  "πk; π/3 + 2πm,  k,m∈ℤ"
         )
+        await bot.api.messages.send(peer_id=peer_id, message=text, random_id=0)
+        if task.get("image_path"):
+            await send_photo(peer_id, task["image_path"])
 
 
 
