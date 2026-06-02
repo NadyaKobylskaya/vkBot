@@ -3159,10 +3159,31 @@ async def handle_variant_callbacks(cmd: str, peer_id: int, user_id: int):
             await _finish_variant(peer_id, user_id)  # ← правильный финиш
         return True
 
+
     elif cmd == "variant_show_right":
-        set_peeked(user_id, True)
-        await send(f"Правильный ответ: {get_answer(user_id) or '—'}\n\n⚠️ Следующий ответ не будет засчитан.")
+        correct = get_answer(user_id) or "—"
+        # Записываем как неверный ответ (подсмотрел)
+        user_answers = ctx.get(f"variant_user_answers_{user_id}") or {}
+        variant = ctx.get(f"variant_{user_id}") or []
+        pos = ctx.get(f"variant_pos_{user_id}") or 0
+        if variant and pos > 0:
+            task_num = variant[pos - 1]["task_number"]
+            user_answers[task_num] = {
+                "user": "подсмотрел",
+                "correct": correct,
+                "is_ok": False,
+                "skipped": False,
+            }
+            ctx.set(f"variant_user_answers_{user_id}", user_answers)
+        # Показываем ответ и сразу предлагаем идти дальше
+        await send(
+            f"✅ Правильный ответ: {correct}\n\n"
+            f"Задание не засчитано.",
+            keyboard=kb.variant_next_kb
+        )
         return True
+
+
 
     elif cmd == "variant_finish":
         variant = ctx.get(f"variant_{user_id}") or []
@@ -3357,11 +3378,70 @@ async def _finish_variant(peer_id: int, user_id: int):
             f"  «4» — от 61 вторичного балла\n"
             f"  «5» — от 72 вторичных баллов"
         )
+
+        user_answers = ctx.get(f"variant_user_answers_{user_id}") or {}
+        if user_answers and variant:
+            try:
+                img_bytes = generate_variant_results_image(variant, user_answers)
+                tmp_path = Path("app/exports") / f"results_{user_id}.png"
+                tmp_path.parent.mkdir(parents=True, exist_ok=True)
+                tmp_path.write_bytes(img_bytes)
+                await send_photo(peer_id, str(tmp_path))
+            except Exception as e:
+                import traceback
+                print(f"⚠️ results image ege_profile: {e}")
+                traceback.print_exc()
+
         await bot.api.messages.send(
             peer_id=peer_id, message=result_msg,
             keyboard=kb.ege_profile, random_id=0
         )
         return
+
+    # ── ЕГЭ база ──────────────────────────────────────────────────────
+    if exam_type == "ege_base":
+        primary = min(score, 21)
+
+        if primary >= 18:
+            grade, grade_comment = "5 🏆", "Отличный результат!"
+        elif primary >= 12:
+            grade, grade_comment = "4 👍", "Хороший результат!"
+        elif primary >= 7:
+            grade, grade_comment = "3 😐", "Минимальный порог пройден."
+        else:
+            grade, grade_comment = "2 😔", "Нужно больше практики"
+
+        result_msg = (
+            f"🏁 Вариант ЕГЭ база завершён!\n"
+            f"{'─' * 20}\n"
+            f"📊 Первичный балл: {primary} из 21\n"
+            f"{'─' * 20}\n"
+            f"Оценка: {grade}\n"
+            f"{grade_comment}\n\n"
+            f"📋 Критерии ЕГЭ база:\n"
+            f"  «3» — от 7 баллов\n"
+            f"  «4» — от 12 баллов\n"
+            f"  «5» — от 18 баллов"
+        )
+
+        user_answers = ctx.get(f"variant_user_answers_{user_id}") or {}
+        if user_answers and variant:
+            try:
+                img_bytes = generate_variant_results_image(variant, user_answers)
+                tmp_path = Path("app/exports") / f"results_{user_id}.png"
+                tmp_path.parent.mkdir(parents=True, exist_ok=True)
+                tmp_path.write_bytes(img_bytes)
+                await send_photo(peer_id, str(tmp_path))
+            except Exception as e:
+                print(f"⚠️ results image ege_base: {e}")
+
+        await bot.api.messages.send(
+            peer_id=peer_id, message=result_msg,
+            keyboard=kb.ege_base, random_id=0
+        )
+        return
+
+
 
     total_max  = 31  # 19 (часть 1) + 12 (часть 2)
     part1_max  = 19
@@ -3435,6 +3515,8 @@ async def _finish_variant(peer_id: int, user_id: int):
         peer_id=peer_id, message=result_msg,
         keyboard=kb.oge, random_id=0
     )
+
+
 
 
 async def _check_ege_base_answer(message: Message, cmd: str):
