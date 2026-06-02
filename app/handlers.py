@@ -221,7 +221,6 @@ async def send_photo(peer_id: int, image_path: str):
                 new_paths.append(path)
 
             elif path.startswith("http://") or path.startswith("https://"):
-                import io
                 async with _aiohttp.ClientSession() as session:
                     async with session.get(path) as resp:
                         data = await resp.read()
@@ -231,16 +230,25 @@ async def send_photo(peer_id: int, image_path: str):
                     new_paths.append(att)
 
             else:
+                # Проверяем есть ли уже кэшированный photo_id
+                if "::" in path:
+                    local_path, cached_photo = path.split("::", 1)
+                    attachments.append(cached_photo)
+                    new_paths.append(path)  # сохраняем оба
+                    continue
+
                 if not os.path.exists(path):
                     print(f"⚠️  send_photo: файл не найден: {path!r}")
+                    new_paths.append(path)
                     continue
                 print(f"[send_photo] загружаю: {path!r}  ({os.path.getsize(path)} байт)")
                 att = await _upload_with_retry(uploader, path, peer_id, is_bytes=False)
                 if att:
                     attachments.append(att)
-                    new_paths.append(att)
+                    new_paths.append(f"{path}::{att}")  # локальный::photo_id
                 else:
                     print(f"⚠️  send_photo: VK не принял файл {path!r}")
+                    new_paths.append(path)
 
         except Exception as e:
             print(f"⚠️  send_photo: ошибка {path!r}: {e}")

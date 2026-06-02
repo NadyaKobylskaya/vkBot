@@ -530,7 +530,8 @@ def prepend_reference_pdf(main_pdf: Path, reference_pdf: Path) -> Path:
 def resolve_image_path(image_path: str | None) -> Path | None:
     if not image_path:
         return None
-    image_path = str(image_path).strip()
+    if "::" in image_path:
+        image_path = image_path.split("::")[0]
     if not image_path:
         return None
     if image_path.startswith(("photo", "doc", "http://", "https://")):
