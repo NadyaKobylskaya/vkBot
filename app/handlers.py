@@ -1027,6 +1027,9 @@ async def handle_callback(event: dict):
     elif cmd == "back_to_ege":
         await send("Выбери уровень ЕГЭ:", keyboard=kb.ege)
 
+    elif cmd == "ege":
+        await send("👇 Выбери уровень:", keyboard=kb.ege)
+
     elif cmd == "ege_base":
         await send("ЕГЭ База — задания 1–21:", keyboard=kb.ege_base)
     elif cmd == "ege_base1":
