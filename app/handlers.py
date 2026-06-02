@@ -3264,10 +3264,14 @@ def generate_variant_results_image(variant: list, user_answers: dict) -> bytes:
     draw = ImageDraw.Draw(img)
 
     try:
-        font      = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 13)
-        font_bold = ImageFont.truetype("C:/Windows/Fonts/arialbd.ttf", 13)
+        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 13)
+        font_bold = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 13)
     except Exception:
-        font = font_bold = ImageFont.load_default()
+        try:
+            font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 13)
+            font_bold = ImageFont.truetype("C:/Windows/Fonts/arialbd.ttf", 13)
+        except Exception:
+            font = font_bold = ImageFont.load_default()
 
     DARK   = (44,  62,  80)
     GREEN  = (39, 174,  96)
