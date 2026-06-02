@@ -1105,14 +1105,7 @@ async def handle_callback(event: dict):
 
     elif cmd.startswith("show_right_e") or cmd.startswith("show_right_p"):
         task_cmd = cmd.replace("show_right_", "")
-        if task_cmd in kb.ege_base_keyboards:
-            _, after_kb = kb.ege_base_keyboards[task_cmd]
-        elif task_cmd in kb.ege_profile_part1_keyboards:
-            _, after_kb = kb.ege_profile_part1_keyboards[task_cmd]
-        elif task_cmd in kb.ege_profile_part2_keyboards:
-            _, after_kb = kb.ege_profile_part2_keyboards[task_cmd]
-        else:
-            after_kb = kb.ege_base
+
         if task_cmd == "p13":
             bot.state_dispenser.dictionary.pop(user_id, None)
             answer_a = get_p13_answer_a(user_id)
@@ -1123,11 +1116,22 @@ async def handle_callback(event: dict):
                 keyboard=kb.ege_p13_success
             )
             return
+
+        # Определяем клавиатуру "ещё задание" для нужного раздела
+        if task_cmd in kb.ege_base_keyboards:
+            retry_kb, _ = kb.ege_base_keyboards[task_cmd]
+        elif task_cmd in kb.ege_profile_part1_keyboards:
+            retry_kb, _ = kb.ege_profile_part1_keyboards[task_cmd]
+        elif task_cmd in kb.ege_profile_part2_keyboards:
+            retry_kb, _ = kb.ege_profile_part2_keyboards[task_cmd]
+        else:
+            retry_kb = kb.ege_base
+
         set_peeked(user_id, True)
         await send(
             f"✅ Правильный ответ: {get_answer(user_id) or 'не найден'}\n\n"
             f"⚠️ Следующий введённый ответ не будет засчитан.",
-            keyboard=after_kb
+            keyboard=retry_kb
         )
 
     # ── ЕГЭ профиль часть 1: числовые ответы p1–p12 ───────────────────────
