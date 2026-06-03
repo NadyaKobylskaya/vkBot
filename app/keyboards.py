@@ -312,6 +312,13 @@ ege_p15_success = (
     .get_json()
 )
 
+ege_p16_success = (
+    Keyboard(inline=True)
+    .add(Callback("🔁 Ещё задание", {"cmd": "p16"}), color=KeyboardButtonColor.POSITIVE)
+    .add(Callback("📋 В меню",      {"cmd": "ege_p_part2"}))
+    .get_json()
+)
+
 
 
 # ═══════════════════════════════════════════════
@@ -788,8 +795,8 @@ help_or_retry_n25 = make_part2_help_kb("show_right_n25", "show_solution_n25")
 
 # ── ЕГЭ БАЗА: словарь клавиатур e1–e21 ─────────────────────────────────────
 # Формат: {cmd: (retry_kb, help_kb)}
-# retry_kb — клавиатура после неверного ответа
-# help_kb  — клавиатура с кнопками «Показать ответ» и «Помощь ИИ»
+# retry_kb — клавиатура при ВЕРНОМ ответе: ещё задание + в меню
+# help_kb  — клавиатура при НЕВЕРНОМ ответе: ещё задание, показать ответ, помощь ИИ, в меню
 
 def _make_ege_base_kbs() -> dict:
     result = {}
@@ -846,18 +853,20 @@ ege_profile_part1_keyboards: dict = _make_ege_p1_kbs()
 def _make_ege_p2_kbs() -> dict:
     result = {}
     for cmd in [f"p{i}" for i in range(13, 20)]:
+        # retry_kb — показывается при ВЕРНОМ ответе: ещё задание + в меню
         retry_kb = (
             Keyboard(inline=True)
-            .add(Callback("🔁 Ещё задание",    {"cmd": cmd}),             color=KeyboardButtonColor.POSITIVE)
-            .add(Callback("✅ Показать ответ", {"cmd": f"show_right_{cmd}"}))
-            .row()
-            .add(Callback("🧠 Помощь ИИ",     {"cmd": "ai_help"}),        color=KeyboardButtonColor.POSITIVE)
-            .add(Callback("📋 В меню",         {"cmd": "ege_p_part2"}))
+            .add(Callback("🔁 Ещё задание", {"cmd": cmd}), color=KeyboardButtonColor.POSITIVE)
+            .add(Callback("📋 В меню",      {"cmd": "ege_p_part2"}))
             .get_json()
         )
+        # help_kb — показывается при НЕВЕРНОМ ответе: ещё задание, показать ответ, помощь ИИ, в меню
         help_kb = (
             Keyboard(inline=True)
             .add(Callback("🔁 Ещё задание",    {"cmd": cmd}),              color=KeyboardButtonColor.POSITIVE)
+            .add(Callback("✅ Показать ответ", {"cmd": f"show_right_{cmd}"}))
+            .row()
+            .add(Callback("🧠 Помощь ИИ",     {"cmd": "ai_help"}),         color=KeyboardButtonColor.POSITIVE)
             .add(Callback("📋 В меню",         {"cmd": "ege_p_part2"}))
             .get_json()
         )

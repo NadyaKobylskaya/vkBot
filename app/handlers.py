@@ -804,7 +804,7 @@ async def check_p15(message: Message):
                 "❌ Неверно. Попробуй ещё раз или посмотри правильный ответ:\n"
                 "Формат ответа: (-∞; 2) ∪ (3; +∞)"
             ),
-            keyboard=retry_kb,
+            keyboard=help_kb,
             random_id=0
         )
 
