@@ -614,7 +614,7 @@ EGE_PROFILE_TASK_MAP = {
     "p13": (13, "ege_p13_eq",       "Задание 13 — Уравнения",                     "part2"),
     "p14": (14, "ege_p14_stereo2",  "Задание 14 — Стереометрическая задача",      "part2"),
     "p15": (15, "ege_p15_ineq",     "Задание 15 — Неравенства",                   "part2"),
-    "p16": (16, "ege_p16_finance",  "Задание 16 — Финансовая математика",         "part2"),
+    "p16": (16, None,               "Задание 16 — Финансовая математика",         "part2"),
     "p17": (17, "ege_p17_planim2",  "Задание 17 — Планиметрическая задача",       "part2"),
     "p18": (18, "ege_p18_param",    "Задание 18 — Параметры",                     "part2"),
     "p19": (19, "ege_p19_numbers",  "Задание 19 — Числа и их свойства",           "part2"),
@@ -807,6 +807,12 @@ async def check_p15(message: Message):
             keyboard=retry_kb,
             random_id=0
         )
+
+
+@router.message(state=TaskStates.p16)
+async def check_p16(message: Message):
+    retry_kb, help_kb = kb.ege_profile_part2_keyboards["p16"]
+    await check_part2_answer(message, 16, retry_kb, help_kb)
 
 
 # -----------------------------------------------------------------------
@@ -1201,7 +1207,7 @@ async def handle_callback(event: dict):
         )
 
 
-    elif cmd in kb.ege_profile_part2_keyboards and cmd not in ("p13", "p15"):
+    elif cmd in kb.ege_profile_part2_keyboards and cmd not in ("p13", "p15", "p16"):
         task_num, topic, label, _ = EGE_PROFILE_TASK_MAP[cmd]
         await send_db_task(
             peer_id, user_id, "ege_profile", task_num, topic,
@@ -1209,6 +1215,27 @@ async def handle_callback(event: dict):
             f"📝 ЕГЭ Профиль · {label}\n\n",
             show_photo_hint=True
         )
+
+    elif cmd == "p16":
+        from app.database import get_random_task as _get
+        task = await _get("ege_profile", 16, None)
+        if not task:
+            await send("⚠️ Заданий по этой теме пока нет. Скоро добавим!", keyboard=kb.ege_p_part2)
+            return
+        set_answer(user_id, task["answer"])
+        set_task_context(user_id, task.get("question") or "Задание №16")
+        set_task_id(user_id, task["id"])
+        set_task_meta(user_id, "ege_profile", 16, task.get("topic") or "financial_math")
+        await bot.state_dispenser.set(peer_id, TaskStates.p16)
+        text = (
+            "📝 ЕГЭ Профиль · Задание 16 — Финансовая математика\n\n"
+            + (task.get("question") or "Реши задание на картинке.")
+            + "\n\n📸 Пришли фото своего решения — нейросеть проверит его!\n"
+              "💬 Или введи числовой ответ, если хочешь проверить только итог."
+        )
+        await bot.api.messages.send(peer_id=peer_id, message=text, random_id=0)
+        if task.get("image_path"):
+            await send_photo(peer_id, task["image_path"])
 
     elif cmd == "p13":
         await send("Выбери тему задания №13 ЕГЭ профиль:", keyboard=kb.ege_p13)
