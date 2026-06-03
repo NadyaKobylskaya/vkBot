@@ -238,9 +238,14 @@ async def send_photo(peer_id: int, image_path: str):
                     continue
 
                 if not os.path.exists(path):
-                    print(f"⚠️  send_photo: файл не найден: {path!r}")
-                    new_paths.append(path)
-                    continue
+                    # Пробуем с префиксом app/
+                    alt_path = os.path.join("app", path)
+                    if os.path.exists(alt_path):
+                        path = alt_path
+                    else:
+                        print(f"⚠️  send_photo: файл не найден: {path!r}")
+                        new_paths.append(path)
+                        continue
                 print(f"[send_photo] загружаю: {path!r}  ({os.path.getsize(path)} байт)")
                 att = await _upload_with_retry(uploader, path, peer_id, is_bytes=False)
                 if att:
