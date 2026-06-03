@@ -770,6 +770,40 @@ async def check_p13_b(message: Message):
             keyboard=retry_kb,
             random_id=0
         )
+@router.message(state=TaskStates.p15)
+async def check_p15(message: Message):
+    user_id = message.from_id
+    peer_id = message.peer_id
+    user_answer = message.text.strip()
+    correct = get_answer(user_id)
+
+    retry_kb, help_kb = kb.ege_profile_part2_keyboards["p15"]
+
+    # Нормализация: убираем пробелы для сравнения
+    def normalize(s):
+        return s.replace(" ", "").replace(",", ".").lower()
+
+    if normalize(user_answer) == normalize(str(correct)):
+        bot.state_dispenser.dictionary.pop(user_id, None)
+        await bot.api.messages.send(
+            peer_id=peer_id,
+            message="✅ Верно! Задание решено 🎉",
+            keyboard=kb.ege_p15_success,
+            random_id=0
+        )
+        await record_attempt(user_id, get_task_id(user_id), True)
+    else:
+        await bot.api.messages.send(
+            peer_id=peer_id,
+            message=(
+                "❌ Неверно. Попробуй ещё раз или посмотри правильный ответ:\n"
+                "Формат ответа: (-∞; 2) ∪ (3; +∞)"
+            ),
+            keyboard=retry_kb,
+            random_id=0
+        )
+
+
 # -----------------------------------------------------------------------
 # Callback-обработчик — единая точка входа для message_event
 # -----------------------------------------------------------------------
@@ -1125,6 +1159,15 @@ async def handle_callback(event: dict):
             )
             return
 
+        if task_cmd == "p15":
+            bot.state_dispenser.dictionary.pop(user_id, None)
+            correct = get_answer(user_id)
+            await send(
+                f"✅ Правильный ответ: {correct}\n\n⚠️ Задание не засчитано.",
+                keyboard=kb.ege_p15_success
+            )
+            return
+
         # Определяем клавиатуру "ещё задание" для нужного раздела
         if task_cmd in kb.ege_base_keyboards:
             retry_kb, _ = kb.ege_base_keyboards[task_cmd]
@@ -1153,7 +1196,7 @@ async def handle_callback(event: dict):
         )
 
 
-    elif cmd in kb.ege_profile_part2_keyboards and cmd != "p13":
+    elif cmd in kb.ege_profile_part2_keyboards and cmd not in ("p13", "p15"):
         task_num, topic, label, _ = EGE_PROFILE_TASK_MAP[cmd]
         await send_db_task(
             peer_id, user_id, "ege_profile", task_num, topic,
@@ -1195,6 +1238,37 @@ async def handle_callback(event: dict):
                   "💬 Или введи ответ текстом.\n\n"
                   "Сначала введи ответ на пункт а) в формате:\n"
                   "πk; π/3 + 2πm,  k,m∈ℤ"
+        )
+        await bot.api.messages.send(peer_id=peer_id, message=text, random_id=0)
+        if task.get("image_path"):
+            await send_photo(peer_id, task["image_path"])
+
+    # ── ЕГЭ профиль задание 15: неравенства ───────────────────────────────
+    elif cmd == "p15":
+        await send("Выбери тему задания №15 ЕГЭ профиль:", keyboard=kb.ege_p15)
+
+    elif cmd in {"p15_exp", "p15_log", "p15_rand"}:
+        topic_map = {
+            "p15_exp":  "exponential_inequalities",
+            "p15_log":  "logarithmic_inequalities",
+            "p15_rand": None,
+        }
+        topic = topic_map[cmd]
+        from app.database import get_random_task as _get
+        task = await _get("ege_profile", 15, topic)
+        if not task:
+            await send("⚠️ Заданий по этой теме пока нет. Скоро добавим!", keyboard=kb.ege_p_part2)
+            return
+        set_answer(user_id, task["answer"])
+        set_task_context(user_id, task.get("question") or "Задание №15")
+        set_task_id(user_id, task["id"])
+        set_task_meta(user_id, "ege_profile", 15, topic or "exponential_inequalities")
+        await bot.state_dispenser.set(peer_id, TaskStates.p15)
+        text = (
+            "📝 ЕГЭ Профиль · Задание 15 — Неравенства\n\n"
+            + (task.get("question") or "Реши неравенство. Запиши ответ в виде промежутка.")
+            + "\n\n📸 Пришли фото своего решения — нейросеть проверит его!\n"
+              "💬 Или введи ответ в виде промежутка, например: (-∞; 2) ∪ (3; +∞)"
         )
         await bot.api.messages.send(peer_id=peer_id, message=text, random_id=0)
         if task.get("image_path"):
@@ -3737,5 +3811,3 @@ for _cmd in [f"p{i}" for i in range(1, 13)]:
         retry_kb, help_kb = kb.ege_profile_part1_keyboards[cmd]
         return make_check_handler(getattr(TaskStates, cmd), retry_kb, help_kb)
     _make_ege_p1()
-
-

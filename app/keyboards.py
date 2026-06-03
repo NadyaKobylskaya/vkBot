@@ -293,6 +293,25 @@ ege_p13_success = (
     .get_json()
 )
 
+ege_p15 = (
+    Keyboard(inline=True)
+    .add(Callback("📈 Показательные",      {"cmd": "p15_exp"}),   color=KeyboardButtonColor.PRIMARY)
+    .row()
+    .add(Callback("📉 Логарифмические",    {"cmd": "p15_log"}),   color=KeyboardButtonColor.PRIMARY)
+    .row()
+    .add(Callback("🎲 Случайное задание",  {"cmd": "p15_rand"}),  color=KeyboardButtonColor.POSITIVE)
+    .row()
+    .add(Callback("◀️ Назад", {"cmd": "ege_p_part2"}))
+    .get_json()
+)
+
+ege_p15_success = (
+    Keyboard(inline=True)
+    .add(Callback("🔁 Ещё задание", {"cmd": "p15"}), color=KeyboardButtonColor.POSITIVE)
+    .add(Callback("📋 В меню",      {"cmd": "ege_p_part2"}))
+    .get_json()
+)
+
 
 
 # ═══════════════════════════════════════════════
