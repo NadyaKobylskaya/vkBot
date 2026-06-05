@@ -224,12 +224,6 @@ def build_progress_chart(vk_id: int, stats: dict, exam_type: str = None) -> list
     CHARTS_DIR.mkdir(parents=True, exist_ok=True)
     plt.close("all")
 
-    for old_file in CHARTS_DIR.glob(f"progress_{vk_id}*.png"):
-        try:
-            old_file.unlink(missing_ok=True)
-        except PermissionError:
-            pass
-
     by_task = stats["by_task"]
     if by_task is None:
         by_task = []
@@ -393,13 +387,7 @@ def build_progress_chart(vk_id: int, stats: dict, exam_type: str = None) -> list
 
 async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: str = None):
 
-    # Удаляем ВСЕ файлы прогресса этого пользователя
     CHARTS_DIR.mkdir(parents=True, exist_ok=True)
-    for old_file in CHARTS_DIR.glob(f"progress_{user_id}*.png"):
-        try:
-            old_file.unlink()
-        except Exception:
-            pass
 
     stats = await get_user_progress_stats(user_id, exam_type=exam_type)
     if not stats:
@@ -413,6 +401,7 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
         )
         return
 
+    # Строим графики — используем vk_id (user_id здесь и есть vk_id, переданный из handlers)
     chart_paths = build_progress_chart(user_id, stats, exam_type=exam_type)
     if not chart_paths:
         await bot_api.messages.send(
@@ -469,9 +458,8 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
         peer_id=peer_id, message=caption, random_id=0
     )
 
-    uploader = PhotoMessageUploader(bot_api)
-
     # Загружаем и отправляем каждый график
+    uploader = PhotoMessageUploader(bot_api)
     for i, path in enumerate(chart_paths):
         if not os.path.exists(path):
             continue
@@ -500,3 +488,11 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
                 message=f"⚠️ График {i + 1} не загрузился: {e}",
                 random_id=0
             )
+
+    # Удаляем файлы только ПОСЛЕ того как все графики отправлены
+    for path in chart_paths:
+        try:
+            if os.path.exists(path):
+                os.unlink(path)
+        except Exception:
+            pass
