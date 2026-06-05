@@ -5,14 +5,12 @@
 
 import os
 import aiosqlite
+import asyncio
 import matplotlib
 matplotlib.use("Agg")  # без GUI — обязательно до import pyplot
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from pathlib import Path
-import asyncio
-from vkbottle.tools import PhotoMessageUploader
-import asyncio
 from vkbottle.tools import PhotoMessageUploader
 
 DB_PATH    = "app/bot_database.db"
@@ -471,12 +469,7 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
         peer_id=peer_id, message=caption, random_id=0
     )
 
-    print(f"[DEBUG] chart_paths = {chart_paths}")
-    print(f"[DEBUG] файлы в папке: {list(CHARTS_DIR.glob('*.png'))}")
-
-    print(f"[DEBUG] входим в цикл, количество файлов: {len(chart_paths)}")
-    for i, path in enumerate(chart_paths):
-        print(f"[DEBUG] итерация {i}, path={path}, exists={os.path.exists(path)}")
+    uploader = PhotoMessageUploader(bot_api)
 
     # Загружаем и отправляем каждый график
     for i, path in enumerate(chart_paths):
@@ -484,22 +477,24 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
             continue
         if i > 0:
             await asyncio.sleep(1.5)
-        print(f"[DEBUG] загружаю {path}")
         try:
-            uploader = PhotoMessageUploader(bot_api)
             attachment = await uploader.upload(
                 file_source=path,
                 peer_id=peer_id
             )
-            print(f"[DEBUG] attachment: {attachment}")
+            if not attachment:
+                await bot_api.messages.send(
+                    peer_id=peer_id,
+                    message=f"⚠️ График {i + 1} не загрузился в VK (пустой ответ).",
+                    random_id=0
+                )
+                continue
             await bot_api.messages.send(
                 peer_id=peer_id,
                 attachment=attachment,
                 random_id=0
             )
-            print(f"[DEBUG] отправлено {i + 1}")
         except Exception as e:
-            print(f"[DEBUG] ОШИБКА {i + 1}: {type(e).__name__}: {e}")
             await bot_api.messages.send(
                 peer_id=peer_id,
                 message=f"⚠️ График {i + 1} не загрузился: {e}",
