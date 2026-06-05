@@ -239,7 +239,7 @@ def build_progress_chart(vk_id: int, stats: dict, exam_type: str = None) -> list
         "ege_base": [
             ("Задания 1–7",   list(range(1,  8))),
             ("Задания 8–14",  list(range(8,  15))),
-            ("Задания 15–19", list(range(15, 20))),
+            ("Задания 15–21", list(range(15, 22))),
         ],
         "ege_profile": [
             ("Задания 1–6",   list(range(1,  7))),
