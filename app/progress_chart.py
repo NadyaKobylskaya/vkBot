@@ -459,13 +459,13 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
     )
 
     # Загружаем и отправляем каждый график
-    uploader = PhotoMessageUploader(bot_api)
     for i, path in enumerate(chart_paths):
         if not os.path.exists(path):
             continue
         if i > 0:
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(2.0)
         try:
+            uploader = PhotoMessageUploader(bot_api)  # новый экземпляр для каждого графика
             attachment = await uploader.upload(
                 file_source=path,
                 peer_id=peer_id
