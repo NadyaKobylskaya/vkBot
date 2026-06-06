@@ -539,18 +539,23 @@ TOPIC_NAMES = {
     "ege_b08_logic":       "Анализ утверждений",
     "ege_b08_statements":  "Анализ утверждений",
     "ege_b09_area":     "Площадь",
-    "ege_b10_planim":   "Прикладная планиметрия",
-    "ege_b11_stereo":   "Прикладная стереометрия",
-    "ege_b12_planim2":  "Планиметрия",
-    "ege_b13_stereo2":  "Стереометрия",
-    "ege_b14_fracs":    "Действия с дробями",
-    "ege_b15_percent":  "Текстовые задачи на проценты",
-    "ege_b16_calc":     "Вычисления и преобразования",
-    "ege_b17_eq":       "Уравнения",
-    "ege_b18_ineq":     "Числа и неравенства",
-    "ege_b19_digits":   "Цифровая запись числа",
-    "ege_b20_word":     "Текстовая задача",
-    "ege_b21_logic":    "Задачи на смекалку",
+    "ege_b10_planim":                    "Прикладная планиметрия",
+    "ege_b11_stereo":                    "Прикладная стереометрия",
+    "ege_b12_planim2":                   "Планиметрия",
+    "ege_b13_stereo2":                   "Стереометрия",
+    "ege_b14_fracs":                     "Действия с дробями",
+    "ege_b14_fractions":                 "Действия с дробями",
+    "ege_b15_percent":                   "Текстовые задачи на проценты",
+    "ege_b15_percent_text":              "Текстовые задачи на проценты",
+    "ege_b16_calc":                      "Вычисления и преобразования",
+    "ege_b16_calculations_transformations": "Вычисления и преобразования",
+    "ege_b17_eq":                        "Уравнения",
+    "ege_b17_equations":                 "Уравнения",
+    "ege_b18_ineq":                      "Числа и неравенства",
+    "ege_b19_digits":                    "Цифровая запись числа",
+    "ege_b20_word":                      "Текстовая задача",
+    "ege_b20_text_problems":             "Текстовая задача",
+    "ege_b21_logic":                     "Задачи на смекалку",
     "ege_p01_planim":   "Планиметрия",
     "ege_p02_vectors":  "Векторы",
     "ege_p03_stereo":   "Стереометрия",
@@ -3092,7 +3097,8 @@ EGE_PROFILE_SECONDARY = {
     26:96, 27:97, 28:98, 29:99, 30:100, 31:100, 32:100,
 }
 
-GEO_TASKS = {15, 16, 17, 18, 19}  # номера геометрических заданий
+GEO_TASKS = {15, 16, 17, 18, 19}  # номера геометрических заданий ОГЭ
+GEO_TASKS_EGE_BASE = {9, 10, 11, 12, 13}  # номера геометрических заданий ЕГЭ база
 
 # Константы баллов 2-й части
 PART2_TASK_SCORES = {20: 2, 21: 2, 22: 2, 23: 2, 24: 2, 25: 2}
@@ -3104,7 +3110,7 @@ async def send_variant_task(peer_id: int, user_id: int, variant: list, pos: int)
     task_num  = task["task_number"]
     exam_type = ctx.get(f"variant_exam_type_{user_id}") or task.get("exam_type", "oge")
     topic_ru  = TOPIC_NAMES_ALL.get(task["topic"], task["topic"])
-    is_geo    = task_num in GEO_TASKS
+    is_geo    = (task_num in GEO_TASKS_EGE_BASE) if exam_type == "ege_base" else (task_num in GEO_TASKS)
     section   = "📐 Геометрия" if is_geo else "🔢 Алгебра"
     is_set_task = exam_type == "oge" and 1 <= task_num <= 5
 
