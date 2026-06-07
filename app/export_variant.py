@@ -376,8 +376,13 @@ def restore_box_variables(text: str) -> str:
     Для тригонометрии ЕГЭ профиль №7 квадратик часто появляется вместо α:
         cos□ = ...  -> cosα = ...
         □ ∈ (...)   -> α ∈ (...)
+    Для задания 19 ОГЭ □□□ + □□ + □ — содержательные клеточки, не трогаем.
     """
     box = re.escape(BOX_CHARS)
+
+    # Задание 19 ОГЭ: □□□ + □□ + □ — клеточки для цифр, смысловой элемент.
+    if re.search(rf"[{box}]{{2,}}\s*\+\s*[{box}]", text):
+        return text
 
     # Тригонометрия: квадрат вместо α.
     text = re.sub(rf"\b(sin|cos|tg|tan|ctg)\s*[{box}]+", r"\1α", text, flags=re.IGNORECASE)
@@ -693,6 +698,10 @@ def clean_question_for_variant(task: Task) -> str:
         q,
         flags=re.IGNORECASE,
     )
+
+    # ЕГЭ профиль №16: условия перечислены через "- ...", форматируем как список
+    if task.exam_type == "ege_profile" and task.task_number == 16:
+        q = re.sub(r"\s*[-–—]\s+(?=[а-яёА-ЯЁ])", r"\n  • ", q)
 
     # ОГЭ №8: убираем подсказки вида «\nПодсказка: ...»
     if task.exam_type == "oge" and task.task_number == 8:
