@@ -699,9 +699,10 @@ def clean_question_for_variant(task: Task) -> str:
         flags=re.IGNORECASE,
     )
 
-    # ЕГЭ профиль №16: условия перечислены через "- ...", форматируем как список
+    # ЕГЭ профиль №16: условия через "; •" форматируем как список с новой строки
     if task.exam_type == "ege_profile" and task.task_number == 16:
-        q = re.sub(r"\s*[-–—]\s+(?=[а-яёА-ЯЁ])", r"\n  • ", q)
+        q = re.sub(r"\s*;\s*•\s*", "\n• ", q)
+        q = re.sub(r"^•\s*", "• ", q)  # первый буллет если есть
 
     # ОГЭ №8: убираем подсказки вида «\nПодсказка: ...»
     if task.exam_type == "oge" and task.task_number == 8:
