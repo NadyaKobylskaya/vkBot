@@ -3198,6 +3198,11 @@ async def check_variant_answer(message: Message):
         await message.answer("Вариант не найден. Начни заново.", keyboard=kb.oge)
         return
 
+    # Блокируем повторный ввод — ждём нажатия кнопки «Следующее задание»
+    if ctx.get(f"variant_answered_{user_id}"):
+        await message.answer("⏭ Нажми «Следующее задание» чтобы продолжить.")
+        return
+
     correct      = get_answer(user_id)
     user_input   = message.text.strip()
     peeked       = get_peeked(user_id)
@@ -3332,9 +3337,17 @@ async def check_variant_answer(message: Message):
 
     next_pos = pos + 1
     if next_pos >= len(variant):
-        await _finish_variant(peer_id, user_id)
+        # Последнее задание — помечаем что ждём подтверждения финиша
+        ctx.set(f"variant_pending_finish_{user_id}", True)
+        await message.answer(
+            result_text,
+            keyboard=kb.variant_next_kb if is_correct else kb.variant_wrong_kb
+        )
     else:
-        ctx.set(f"variant_pos_{user_id}", next_pos)
+        # Запоминаем следующую позицию, но НЕ применяем её сейчас
+        # Позиция обновится только после нажатия «Следующее задание»
+        ctx.set(f"variant_next_pos_{user_id}", next_pos)
+        ctx.set(f"variant_answered_{user_id}", True)
         await message.answer(
             result_text,
             keyboard=kb.variant_next_kb if is_correct else kb.variant_wrong_kb
@@ -3410,6 +3423,9 @@ async def handle_variant_callbacks(cmd: str, peer_id: int, user_id: int):
         ctx.set(f"variant_pos_{user_id}", 0)
         ctx.set(f"variant_score_{user_id}", 0)
         ctx.set(f"variant_geo_score_{user_id}", 0)
+        ctx.set(f"variant_answered_{user_id}", False)
+        ctx.set(f"variant_next_pos_{user_id}", None)
+        ctx.set(f"variant_pending_finish_{user_id}", False)
         set_peeked(user_id, False)
         await bot.state_dispenser.set(peer_id, VariantStates.solving)
 
@@ -3435,6 +3451,9 @@ async def handle_variant_callbacks(cmd: str, peer_id: int, user_id: int):
         ctx.set(f"variant_pos_{user_id}", 0)
         ctx.set(f"variant_score_{user_id}", 0)
         ctx.set(f"variant_geo_score_{user_id}", 0)
+        ctx.set(f"variant_answered_{user_id}", False)
+        ctx.set(f"variant_next_pos_{user_id}", None)
+        ctx.set(f"variant_pending_finish_{user_id}", False)
         set_peeked(user_id, False)
         await bot.state_dispenser.set(peer_id, VariantStates.solving)
 
@@ -3461,6 +3480,9 @@ async def handle_variant_callbacks(cmd: str, peer_id: int, user_id: int):
         ctx.set(f"variant_pos_{user_id}", 0)
         ctx.set(f"variant_score_{user_id}", 0)
         ctx.set(f"variant_geo_score_{user_id}", 0)
+        ctx.set(f"variant_answered_{user_id}", False)
+        ctx.set(f"variant_next_pos_{user_id}", None)
+        ctx.set(f"variant_pending_finish_{user_id}", False)
         set_peeked(user_id, False)
         await bot.state_dispenser.set(peer_id, VariantStates.solving)
 
@@ -3475,11 +3497,25 @@ async def handle_variant_callbacks(cmd: str, peer_id: int, user_id: int):
 
     elif cmd == "variant_next":
         variant = ctx.get(f"variant_{user_id}") or []
+
+        # Применяем следующую позицию если она подготовлена
+        next_pos = ctx.get(f"variant_next_pos_{user_id}")
+        if next_pos is not None:
+            ctx.set(f"variant_pos_{user_id}", next_pos)
+            ctx.set(f"variant_next_pos_{user_id}", None)
+            ctx.set(f"variant_answered_{user_id}", False)
+
+        # Проверяем финиш
+        if ctx.get(f"variant_pending_finish_{user_id}"):
+            ctx.set(f"variant_pending_finish_{user_id}", False)
+            await _finish_variant(peer_id, user_id)
+            return True
+
         pos = ctx.get(f"variant_pos_{user_id}") or 0
         if variant and pos < len(variant):
             await send_variant_task(peer_id, user_id, variant, pos)
         else:
-            await _finish_variant(peer_id, user_id)  # ← правильный финиш
+            await _finish_variant(peer_id, user_id)
         return True
 
 
