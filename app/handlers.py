@@ -3200,7 +3200,7 @@ async def check_variant_answer(message: Message):
 
     # Блокируем повторный ввод — ждём нажатия кнопки «Следующее задание»
     if ctx.get(f"variant_answered_{user_id}"):
-        await message.answer("⏭ Нажми «Следующее задание» чтобы продолжить.")
+        await message.answer("Нажми «➡️Дальше» чтобы продолжить.")
         return
 
     correct      = get_answer(user_id)

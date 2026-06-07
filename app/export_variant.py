@@ -686,6 +686,14 @@ def repair_question_for_export(task: Task) -> str:
 def clean_question_for_variant(task: Task) -> str:
     q = repair_question_for_export(task) or "Решите задание по рисунку."
 
+    # Убираем служебный префикс "Задание N ЕГЭ (...). " из текста задания
+    q = re.sub(
+        r"^Задание\s+\d+\s+ЕГЭ\s*\([^)]*\)\.\s*",
+        "",
+        q,
+        flags=re.IGNORECASE,
+    )
+
     # ОГЭ №8: убираем подсказки вида «\nПодсказка: ...»
     if task.exam_type == "oge" and task.task_number == 8:
         q = re.sub(r"\n?Подсказка\s*:.*$", "", q,
