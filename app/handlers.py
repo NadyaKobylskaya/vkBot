@@ -1019,9 +1019,10 @@ async def export_variant_to_vk(
         return
 
     import random
+    from datetime import datetime
 
     exam_title = VARIANT_EXAM_TITLES.get(exam_type, exam_type)
-    variant_number = random.randint(1, 999)
+    variant_number = int(datetime.now().strftime("%d%H%M"))
 
     outdir = Path("app") / "exports"
     outdir.mkdir(parents=True, exist_ok=True)
