@@ -808,7 +808,12 @@ async def check_p13_b(message: Message):
             random_id=0
         )
         from app.database import record_attempt
-        await record_attempt(user_id, get_task_id(user_id), True)
+        task_id = get_task_id(user_id)
+        exam_t, task_num, topic = get_task_meta(user_id)
+        await record_attempt(
+            user_id, task_id, "",
+            True, exam_t, task_num, topic
+        )
     else:
         await bot.api.messages.send(
             peer_id=peer_id,
@@ -841,7 +846,12 @@ async def check_p15(message: Message):
             keyboard=kb.ege_p15_success,
             random_id=0
         )
-        await record_attempt(user_id, get_task_id(user_id), True)
+        task_id = get_task_id(user_id)
+        exam_t, task_num, topic = get_task_meta(user_id)
+        await record_attempt(
+            user_id, task_id, user_answer,
+            True, exam_t, task_num, topic
+        )
     else:
         await bot.api.messages.send(
             peer_id=peer_id,

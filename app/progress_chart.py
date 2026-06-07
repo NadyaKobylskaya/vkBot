@@ -161,8 +161,37 @@ TOPIC_NAMES_RU = {
     "ege_b19_digits":              "Числа/цифры",
     "ege_b19_digits2":             "Числа/цифры",
     "ege_b20_word":                "Текст. задача",
-    "ege_b20_text_problems":       "Текст. задача",
     "ege_b21_logic":               "Смекалка",
+# ── ЕГЭ база — задания 5, 10–13 (короткие топики) ────────────────
+    "ege_b05_probability":                "Вероятность",
+    "ege_b15_percent_text":               "Проценты",
+    "ege_b16_calculations_transformations": "Вычисления",
+    "ege_b17_equations":                  "Уравнения",
+    "ege_b20_text_problems":              "Текст. задача",
+    # задание 10
+    "perimeter":                          "Периметр",
+    "area":                               "Площадь",
+    "pythagoras":                         "Теор. Пифагора",
+    "similar_triangles":                  "Подобие треуг.",
+    "circle":                             "Окружность",
+    "trapezoid_midline":                  "Трапеция/средняя",
+    # задание 11
+    "parallelepiped_prism":               "Паралл./призма",
+    "pyramid":                            "Пирамида",
+    "cylinder":                           "Цилиндр",
+    "cone":                               "Конус",
+    "sphere":                             "Шар",
+    "polyhedra_other":                    "Многогранники",
+    # задание 12
+    "angles":                             "Углы",
+    "area_pythagor":                      "Площадь/Пифагор",
+    "midline_trapezoid":                  "Средняя линия",
+    "ratios":                             "Отношения",
+    "regular_polygons":                   "Прав. многоугол.",
+    "circle_length":                      "Длина окружности",
+    # задание 13
+    "parallelepiped":                     "Параллелепипед",
+    "prism":                              "Призма",
 }
 
 
