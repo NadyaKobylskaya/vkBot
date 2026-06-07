@@ -602,11 +602,10 @@ def get_export_image_size(task: Task, target: str = "pdf"):
 # ════════════════════════════════════════════════════════════════════════════
 
 def make_output_name(exam_type: str, variant_number: int | None, answers: bool, ext: str) -> str:
-    print(f"[DEBUG] make_output_name: variant_number={variant_number!r}")  # ← добавить
-    stamp = datetime.now().strftime("%Y%m%d_%H%M")
+    stamp = datetime.now().strftime("%d%H%M")  # ← было "%Y%m%d_%H%M"
     exam_names = {"oge": "ОГЭ", "ege_base": "ЕГЭ_база", "ege_profile": "ЕГЭ_профиль"}
     exam = exam_names.get(exam_type, exam_type.replace("_", "-"))
-    number = str(variant_number) if variant_number is not None else datetime.now().strftime("%H%M%S")
+    number = str(variant_number) if variant_number is not None else stamp
     suffix = "_с_ответами" if answers else ""
     return f"{exam}_вариант_{number}{suffix}.{ext}"
 
@@ -699,9 +698,10 @@ def clean_question_for_variant(task: Task) -> str:
         flags=re.IGNORECASE,
     )
 
-    # ЕГЭ профиль №16: условия через "; •" форматируем как список с новой строки
+    # ЕГЭ профиль №16: условия через "; •" или "; -" форматируем как список с новой строки
     if task.exam_type == "ege_profile" and task.task_number == 16:
-        q = re.sub(r"\s*;\s*•\s*", "\n• ", q)
+        q = re.sub(r"\s*;\s*•\s*", "\n• ", q)  # буллеты
+        q = re.sub(r"\s*;\s*-\s*", "\n- ", q)  # дефисы
         q = re.sub(r"^•\s*", "• ", q)  # первый буллет если есть
 
     # ОГЭ №8: убираем подсказки вида «\nПодсказка: ...»

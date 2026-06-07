@@ -90,7 +90,6 @@ TOPIC_NAMES_RU = {
     "ege_p04_probability":         "Вероятность",
     "ege_p05_probability_complex": "Вероятность (сл.)",
     "ege_p06_stereometry":         "Стереометрия",
-    "ege_p07_expr":                "Значение выражения",
     "ege_p08_equations":           "Уравнения",
     "ege_p09_applied":             "Прикл. задача",
     "ege_p09_word_problems":       "Текст. задача",
@@ -100,6 +99,12 @@ TOPIC_NAMES_RU = {
     "ege_p11_functions":           "Функции",
     "ege_p12_research":            "Исслед. функций",
     "ege_p12_derivative":          "Производная",
+    "ege_p04_prob":                "Вероятность",
+    "ege_p05_prob_th":             "Теор. вер.",
+    "ege_p05_prob2":               "Теор. вер.",
+    "ege_p06_eq":                  "Уравнения",
+    "ege_p07_expr":                "Значение выр.",
+    "ege_p08_deriv":               "Производная",
     # ── ЕГЭ профиль — часть 2 (p13–p19) ──────────────────────────────
     "ege_p13_eq":                  "Уравнения (разв.)",
     "ege_p13_equations":           "Уравнения (разв.)",
@@ -462,15 +467,14 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
     for i, path in enumerate(chart_paths):
         if not os.path.exists(path):
             continue
-        if i > 0:
-            await asyncio.sleep(2.0)
+        await asyncio.sleep(2.5)  # пауза перед КАЖДЫМ графиком, включая первый
         try:
-            uploader = PhotoMessageUploader(bot_api)  # новый экземпляр для каждого графика
+            uploader = PhotoMessageUploader(bot_api)
             attachment = await uploader.upload(
                 file_source=path,
                 peer_id=peer_id
             )
-            if not attachment:
+            if not attachment or "undefined" in str(attachment):
                 await bot_api.messages.send(
                     peer_id=peer_id,
                     message=f"⚠️ График {i + 1} не загрузился в VK (пустой ответ).",
