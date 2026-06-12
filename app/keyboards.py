@@ -406,7 +406,7 @@ def make_after_peek_kb(retry_cmd: str):
         .add(Callback("🔄 Новое задание", payload={"cmd": retry_cmd}),
              color=KeyboardButtonColor.POSITIVE)
         .row()
-        .add(Callback("🤖 AI Help", payload={"cmd": "ai_help"}))
+        .add(Callback("🧠 AI Help", payload={"cmd": "ai_help"}))
         .add(Callback("🏠 В меню", payload={"cmd": "back_to_tasks_oge"}),
              color=KeyboardButtonColor.NEGATIVE)
         .get_json()
@@ -586,7 +586,7 @@ def make_set_hint_kb(topic_cmd: str) -> str:
     return (
         Keyboard(inline=True)
         .add(Callback("✅ Верный ответ",  {"cmd": f"set_show_right_{topic_cmd}"}), color=KeyboardButtonColor.NEGATIVE)
-        .add(Callback("🧠 Помощь ИИ",    {"cmd": "ai_help"}),                     color=KeyboardButtonColor.POSITIVE)
+        .add(Callback("🧠 AI Help",    {"cmd": "ai_help"}),                     color=KeyboardButtonColor.POSITIVE)
         .row()
         .add(Callback("📖 Справочник",   {"cmd": f"set_show_ref_{topic_cmd}"}))
         .add(Callback("➡️ Дальше",       {"cmd": f"set_skip_{topic_cmd}"}))
@@ -612,7 +612,7 @@ def make_part2_help_kb(show_right_cmd: str, show_solution_cmd: str) -> str:
         .row()
         .add(Callback("📄 Подробное решение", {"cmd": show_solution_cmd}))
         .row()
-        .add(Callback("🧠 Помощь ИИ",         {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
+        .add(Callback("🧠 AI Help",         {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
         .get_json()
     )
 
@@ -643,7 +643,7 @@ def make_help_kb(show_right_cmd: str, show_help_cmd: str) -> str:
         .row()
         .add(Callback("📖 Справочник",       {"cmd": show_help_cmd}))
         .row()
-        .add(Callback("🧠 Помощь ИИ",        {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
+        .add(Callback("🧠 AI Help",        {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
         .get_json()
     )
 
@@ -812,7 +812,7 @@ def _make_ege_base_kbs() -> dict:
             .add(Callback("🔁 Ещё задание", {"cmd": cmd}), color=KeyboardButtonColor.POSITIVE)
             .add(Callback("✅ Показать ответ", {"cmd": f"show_right_{cmd}"}))
             .row()
-            .add(Callback("🧠 Помощь ИИ", {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
+            .add(Callback("🧠 AI Help", {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
             .add(Callback("📋 В меню", {"cmd": "ege_base"}))
             .get_json()
         )
@@ -838,7 +838,7 @@ def _make_ege_p1_kbs() -> dict:
             .add(Callback("🔁 Ещё задание", {"cmd": cmd}), color=KeyboardButtonColor.POSITIVE)
             .add(Callback("✅ Показать ответ", {"cmd": f"show_right_{cmd}"}))
             .row()
-            .add(Callback("🧠 Помощь ИИ", {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
+            .add(Callback("🧠 AI Help", {"cmd": "ai_help"}), color=KeyboardButtonColor.POSITIVE)
             .add(Callback("📋 В меню", {"cmd": "ege_profile"}))
             .get_json()
         )
@@ -866,7 +866,7 @@ def _make_ege_p2_kbs() -> dict:
             .add(Callback("🔁 Ещё задание",    {"cmd": cmd}),              color=KeyboardButtonColor.POSITIVE)
             .add(Callback("✅ Показать ответ", {"cmd": f"show_right_{cmd}"}))
             .row()
-            .add(Callback("🧠 Помощь ИИ",     {"cmd": "ai_help"}),         color=KeyboardButtonColor.POSITIVE)
+            .add(Callback("🧠 AI Help",     {"cmd": "ai_help"}),         color=KeyboardButtonColor.POSITIVE)
             .add(Callback("📋 В меню",         {"cmd": "ege_p_part2"}))
             .get_json()
         )

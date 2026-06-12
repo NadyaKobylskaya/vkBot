@@ -2956,10 +2956,7 @@ async def check_part2_answer_result(message: Message, task_number: int) -> dict:
         # ── После разбора предлагаем ввести ответ для зачёта ────────
         await bot.api.messages.send(
             peer_id=message.peer_id,
-            message=(
-                "✏️ Если решение верное — введи числовой ответ для зачёта попытки.\n"
-                "Или нажми 🧠 AI Help для дополнительного разбора."
-            ),
+            message="✏️ Если решение верное — введи числовой ответ для зачёта попытки.",
             random_id=0
         )
 
