@@ -2953,11 +2953,21 @@ async def check_part2_answer_result(message: Message, task_number: int) -> dict:
                 message=f"⚠️ Не удалось получить разбор. Попробуй 🧠 AI Help.",
                 random_id=0
             )
+        # ── После разбора предлагаем ввести ответ для зачёта ────────
+        await bot.api.messages.send(
+            peer_id=message.peer_id,
+            message=(
+                "✏️ Если решение верное — введи числовой ответ для зачёта попытки.\n"
+                "Или нажми 🧠 AI Help для дополнительного разбора."
+            ),
+            random_id=0
+        )
 
         return {
             "mode": "text", "is_correct": False, "score": 0,
             "result_text": "", "need_retry": False,
         }
+
 
     # ── ТЕКСТ → числовая проверка ────────────────────────────────────
     correct    = get_answer(user_id)
