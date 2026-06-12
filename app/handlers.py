@@ -23,6 +23,8 @@ from app.database import (
 )
 from app.progress_chart import send_progress_chart
 
+
+
 # -----------------------------------------------------------------------
 # Инициализация
 # -----------------------------------------------------------------------
@@ -2809,7 +2811,7 @@ async def check_part2_answer_result(message: Message, task_number: int) -> dict:
     user_id    = message.from_id
     photo_path = await download_vk_photo(message)
 
-    # ── ФОТО → нейросеть ─────────────────────────────────────────────
+    # ── ФОТО → нейросеть + гибридный разбор ─────────────────────────
     if photo_path:
         try:
             await bot.api.messages.send(
@@ -2817,7 +2819,16 @@ async def check_part2_answer_result(message: Message, task_number: int) -> dict:
                 message="🔍 Проверяю твоё решение...",
                 random_id=0
             )
+            # Сохраняем base64 фото в ctx для последующей передачи в DeepSeek
+            try:
+                import base64
+                with open(photo_path, "rb") as f:
+                    ctx.set(f"last_photo_b64_{user_id}", base64.b64encode(f.read()).decode("utf-8"))
+            except Exception:
+                pass
+
             result = await neural_checker.check_image(photo_path, task_number)
+
         finally:
             os.unlink(photo_path)
 
@@ -2857,14 +2868,100 @@ async def check_part2_answer_result(message: Message, task_number: int) -> dict:
                 topic=topic,
             )
 
+        # ── Если не полный балл — предлагаем гибридный разбор ───────
+        if total < 2:
+            task_context = get_task_context(user_id) or f"Задание №{task_number}"
+
+            # Сохраняем контекст для последующего вызова DeepSeek
+            ctx.set(f"awaiting_explanation_{user_id}", {
+                "task_number":  task_number,
+                "neural_result": result,
+                "task_context": task_context,
+            })
+
+            text += (
+                "\n\n🧠 Хочешь разобрать ошибку подробнее?\n"
+                "Опиши кратко что ты делал в решении — и AI покажет где именно ошибка.\n\n"
+                "Например:\n"
+                "• составил уравнение\n"
+                "• нашёл дискриминант D = ...\n"
+                "• получил ответ: ...\n\n"
+                "Или нажми 🧠 AI Help для полного разбора."
+            )
+
         return {
             "mode": "photo", "is_correct": (total == 2), "score": total,
             "result_text": text, "need_retry": False,
         }
 
+    # ── ТЕКСТ → проверяем сначала не ждём ли объяснения ─────────────
+    pending = ctx.get(f"awaiting_explanation_{user_id}")
+    if pending and message.text and len(message.text.strip()) >= 10:
+        user_explanation = message.text.strip()
+        ctx.set(f"awaiting_explanation_{user_id}", None)
+
+        await bot.api.messages.send(
+            peer_id=message.peer_id,
+            message="🧠 Анализирую твоё решение...",
+            random_id=0
+        )
+
+        try:
+            task_context = pending.get("task_context", f"Задание №{pending['task_number']}")
+            neural_res   = pending.get("neural_result", {})
+            k1 = neural_res.get("K1", {})
+            k2 = neural_res.get("K2", {})
+            neural_summary = (
+                f"Нейросеть оценила: "
+                f"K1={k1.get('score','?')} ({k1.get('confidence',0):.0%}), "
+                f"K2={k2.get('score','?')} ({k2.get('confidence',0):.0%})"
+            )
+
+            prompt = (
+                f"Задание №{pending['task_number']} ОГЭ/ЕГЭ по математике.\n\n"
+                f"Условие задачи:\n{task_context}\n\n"
+                f"Ход решения ученика:\n{user_explanation}\n\n"
+                f"{neural_summary}\n\n"
+                f"Пожалуйста:\n"
+                f"1. Укажи конкретно где допущена ошибка\n"
+                f"2. Объясни как правильно выполнить этот шаг\n"
+                f"3. Если ответ неверный — покажи верный ответ пошагово\n\n"
+                f"Без LaTeX, используй Unicode: x², √, ≤, ·"
+            )
+
+            explanation = await math_helper.ask_math_question(prompt, task_context)
+
+            # Разбиваем если длиннее лимита VK (4096 символов)
+            if len(explanation) > 3800:
+                parts = [explanation[i:i+3800] for i in range(0, len(explanation), 3800)]
+                for part in parts:
+                    await bot.api.messages.send(
+                        peer_id=message.peer_id,
+                        message=part,
+                        random_id=0
+                    )
+            else:
+                await bot.api.messages.send(
+                    peer_id=message.peer_id,
+                    message=explanation,
+                    random_id=0
+                )
+
+        except Exception as e:
+            await bot.api.messages.send(
+                peer_id=message.peer_id,
+                message=f"⚠️ Не удалось получить разбор. Попробуй 🧠 AI Help.",
+                random_id=0
+            )
+
+        return {
+            "mode": "text", "is_correct": False, "score": 0,
+            "result_text": "", "need_retry": False,
+        }
+
     # ── ТЕКСТ → числовая проверка ────────────────────────────────────
     correct    = get_answer(user_id)
-    user_input = message.text.strip()
+    user_input = message.text.strip() if message.text else ""
 
     def parse_nums(s: str) -> list[float]:
         """Извлечь числа из строки любого формата: (4; 1) и (4; -1), 4 1 4 -1 итд."""
