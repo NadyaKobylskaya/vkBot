@@ -2439,7 +2439,6 @@ async def handle_callback(event: dict):
 
     elif cmd == "n24_mark_correct":
         # Пользователь сам подтвердил что доказательство верное
-        user_id = event.object.user_id
         task_meta = get_task_meta(user_id)
         if task_meta:
             exam_type, task_num, topic = task_meta
