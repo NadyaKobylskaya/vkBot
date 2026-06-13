@@ -482,17 +482,32 @@ async def send_progress_chart(peer_id: int, user_id: int, bot_api, exam_type: st
     for i, path in enumerate(chart_paths):
         if not os.path.exists(path):
             continue
-        await asyncio.sleep(2.5)  # пауза перед КАЖДЫМ графиком, включая первый
+        await asyncio.sleep(4)  # увеличили паузу
         try:
             uploader = PhotoMessageUploader(bot_api)
-            attachment = await uploader.upload(
-                file_source=path,
-                peer_id=peer_id
-            )
-            if not attachment or "undefined" in str(attachment):
+            attachment = None
+            # 3 попытки с паузой 4 секунды
+            for attempt in range(3):
+                try:
+                    with open(path, "rb") as f:
+                        import io
+                        data = io.BytesIO(f.read())
+                    attachment = await uploader.upload(
+                        file_source=data,
+                        peer_id=peer_id
+                    )
+                    if attachment and "undefined" not in str(attachment):
+                        break
+                    attachment = None
+                except Exception:
+                    pass
+                if attempt < 2:
+                    await asyncio.sleep(4)
+
+            if not attachment:
                 await bot_api.messages.send(
                     peer_id=peer_id,
-                    message=f"⚠️ График {i + 1} не загрузился в VK (пустой ответ).",
+                    message=f"⚠️ График {i + 1} не загрузился после 3 попыток.",
                     random_id=0
                 )
                 continue
