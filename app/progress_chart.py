@@ -205,17 +205,15 @@ async def get_user_progress_stats(vk_id: int, exam_type: str = None) -> dict | N
             return None
         user_id = user["id"]
 
-        if exam_type:
-            cursor = await db.execute("""
-                SELECT SUM(total) as total, SUM(correct) as correct
-                FROM progress WHERE user_id = ? AND exam_type = ?
-            """, (user_id, exam_type))
-        else:
-            cursor = await db.execute("""
-                SELECT SUM(total) as total, SUM(correct) as correct
-                FROM progress WHERE user_id = ?
-            """, (user_id,))
+        # Фильтр по типу экзамена
+        exam_filter = "AND exam_type = ?" if exam_type else ""
+        params_summary = (user_id, exam_type) if exam_type else (user_id,)
+        params_detail  = (user_id, exam_type) if exam_type else (user_id,)
 
+        cursor = await db.execute(f"""
+            SELECT SUM(total) as total, SUM(correct) as correct
+            FROM progress WHERE user_id = ? {exam_filter}
+        """, params_summary)
         summary = await cursor.fetchone()
         if not summary or not summary["total"]:
             return None
@@ -223,29 +221,16 @@ async def get_user_progress_stats(vk_id: int, exam_type: str = None) -> dict | N
         total   = summary["total"]
         correct = summary["correct"]
 
-        if exam_type:
-            cursor = await db.execute("""
-                SELECT task_number, topic,
-                       SUM(total)   as total,
-                       SUM(correct) as correct,
-                       ROUND(SUM(correct) * 100.0 / SUM(total), 1) as accuracy
-                FROM progress
-                WHERE user_id = ? AND exam_type = ?
-                GROUP BY task_number, topic
-                ORDER BY task_number, topic
-            """, (user_id, exam_type))
-        else:
-            cursor = await db.execute("""
-                SELECT task_number, topic,
-                       SUM(total)   as total,
-                       SUM(correct) as correct,
-                       ROUND(SUM(correct) * 100.0 / SUM(total), 1) as accuracy
-                FROM progress
-                WHERE user_id = ?
-                GROUP BY task_number, topic
-                ORDER BY task_number, topic
-            """, (user_id,))
-
+        cursor = await db.execute(f"""
+            SELECT task_number, topic,
+                   SUM(total)   as total,
+                   SUM(correct) as correct,
+                   ROUND(SUM(correct) * 100.0 / SUM(total), 1) as accuracy
+            FROM progress
+            WHERE user_id = ? {exam_filter}
+            GROUP BY task_number, topic
+            ORDER BY task_number, topic
+        """, params_detail)
         rows = [dict(r) for r in await cursor.fetchall()]
 
     return {
