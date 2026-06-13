@@ -571,6 +571,17 @@ oge_n21 = (
     .get_json()
 )
 
+n24_self_check = (
+    Keyboard(inline=True)
+    .add(Callback("✅ Доказательство верное", {"cmd": "n24_mark_correct"}),
+         color=KeyboardButtonColor.POSITIVE)
+    .row()
+    .add(Callback("🔄 Попробовать ещё раз",   {"cmd": "n24_retry"}),
+         color=KeyboardButtonColor.SECONDARY)
+    .add(Callback("🧠 AI Help",               {"cmd": "ai_help"}),
+         color=KeyboardButtonColor.PRIMARY)
+    .get_json()
+)
 # ═══════════════════════════════════════════════
 # КЛАВИАТУРЫ ДЛЯ НАБОРА ЗАДАНИЙ 1–5
 # ═══════════════════════════════════════════════

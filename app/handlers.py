@@ -2402,9 +2402,24 @@ async def handle_callback(event: dict):
         await send("Выбери тему задания №24:", keyboard=kb.oge_n24)
 
     elif cmd.startswith("proof_"):
-        # proof_parallelogram, proof_triangle, proof_circle и т.д.
-        await send_db_task(peer_id, user_id, "oge", 24, cmd, TaskStates.n24,
-                           "📐 Задание 24 — Доказательство (2-я часть)\n\n", show_photo_hint=True)
+        import random as _random
+
+        N24_TOPICS = [
+            "proof_parallelogram",
+            "proof_triangle",
+            "proof_circle",
+        ]
+
+        if cmd == "proof_random":
+            topic_24 = _random.choice(N24_TOPICS)
+        else:
+            topic_24 = cmd
+
+        await send_db_task(
+            peer_id, user_id, "oge", 24, topic_24, TaskStates.n24,
+            "📐 Задание 24 — Доказательство (2-я часть)\n\n",
+            show_photo_hint=True
+        )
 
 
     elif cmd == "show_right_n24":
@@ -2421,6 +2436,34 @@ async def handle_callback(event: dict):
 
         )
     elif cmd == "show_solution_n24": await send("📄 Воспользуйтесь 🧠 AI Help для разбора доказательства!")
+
+    elif cmd == "n24_mark_correct":
+        # Пользователь сам подтвердил что доказательство верное
+        user_id = event.object.user_id
+        task_meta = get_task_meta(user_id)
+        if task_meta:
+            exam_type, task_num, topic = task_meta
+            await record_attempt(
+                vk_id=user_id,
+                task_id=get_task_id(user_id) or 0,
+                user_answer="self_verified:correct",
+                is_correct=True,
+                exam_type=exam_type,
+                task_number=task_num,
+                topic=topic,
+            )
+        bot.state_dispenser.dictionary.pop(user_id, None)
+        await send(
+            "✅ Отлично! Попытка засчитана.",
+            keyboard=kb.retry_or_menu_n24
+        )
+
+    elif cmd == "n24_retry":
+        # Пользователь хочет попробовать снова
+        await send(
+            "📸 Пришли фото нового решения или введи описание хода доказательства.",
+            keyboard=kb.after_peek_n24
+        )
 
 
     elif cmd == "n25":
@@ -2954,11 +2997,26 @@ async def check_part2_answer_result(message: Message, task_number: int) -> dict:
                 random_id=0
             )
         # ── После разбора предлагаем ввести ответ для зачёта ────────
-        await bot.api.messages.send(
-            peer_id=message.peer_id,
-            message="✏️ Если решение верное — введи числовой ответ для зачёта попытки.",
-            random_id=0
-        )
+        # Для задания 24 — доказательство, числового ответа нет
+        task_meta = get_task_meta(message.from_id)
+        task_num_current = task_meta[1] if task_meta else 0
+
+        if task_num_current == 24:
+            await bot.api.messages.send(
+                peer_id=message.peer_id,
+                message=(
+                    "Если доказательство верное — нажми ✅ чтобы засчитать попытку.\n"
+                    "Если нашёл ошибку — попробуй ещё раз."
+                ),
+                keyboard=kb.n24_self_check,  # см. ниже — новая клавиатура
+                random_id=0
+            )
+        else:
+            await bot.api.messages.send(
+                peer_id=message.peer_id,
+                message="✏️ Если решение верное — введи числовой ответ для зачёта попытки.",
+                random_id=0
+            )
 
         return {
             "mode": "text", "is_correct": False, "score": 0,
